@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFDFE5;
+    position: absolute;
+    height: 100%;
+    font-family: 'lusitana';
+}
+
+header{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+h2{
+    position: absolute;
+    height: 33px; 
+    width: 324px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    font-family: 'lusitana';
+}
+
+.container{
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+}
+.lado-lado>main {
+    display: grid;
+    height: 29px;
+    width: 32px;
+    border-radius: 10px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+main {
+    padding: 20px;
+}
