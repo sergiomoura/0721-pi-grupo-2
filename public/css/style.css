@@ -1,25 +1,28 @@
-body{
+body {
     background-color: #FFDFE5;
-    position: absolute;
-    height: 100%;
+    margin: auto;
+    display: flex;
     font-family: 'lusitana';
     background-image: url(/design/img/paleta1.jpg);
     background-size: cover;
-	z-index: -1;
+    z-index: -1;
 }
 
-html{
-    font-size: 16px;
-}
-header{
-    position: absolute;
-    width: 100px;
-    height: 100px;
+header {
+    position: fixed;
+    padding: 70px;
 }
 
-h2{
+header .container {
+    color: #FFDFE5;
+    display: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
     position: absolute;
-    height: 33px; 
+    height: 33px;
     width: 324px;
     font-style: normal;
     font-weight: 400;
@@ -29,22 +32,47 @@ h2{
     font-family: 'lusitana';
 }
 
-.container{
+h1 {
     position: absolute;
-    border-radius: 10px;
-    width: 10%;
+    height: 33px;
+    width: 324px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    font-family: 'lusitana';
 }
-.lado-lado>main> {
-    display: grid;
+
+.logo {
+    position: fixed;
+    border-radius: 10px;
+    width: 5px;
+}
+
+#menu-container {
+    display: flex;
+    text-align: justify;
+}
+
+.container-lado-lado{
+    display: flex;
     height: 29px;
     width: 32px;
     border-radius: 10px;
-    justify-content: space-between;
+    flex-direction: row;
 }
-.produto{
+
+.produto {
     border-radius: 10px;
-    justify-content: space-between;
+    justify-content: center;
 }
+
 main {
     padding: 20px;
 }
+
+p {
+    text-align: end;
+}
+
