@@ -1,6 +1,10 @@
 body{
     margin: 0;
 }
+main{
+    background-color: rgba(255, 248, 248, 1);
+
+}
 #conteiner{
     display: grid;
     grid-template-columns:  auto ;
@@ -37,15 +41,19 @@ body{
 #informacoes_contato>li{
     padding-bottom: 10px;
 }
+
 #carrinho{
     grid-area: carrinho;
     background-color: rgba(255, 248, 248, 1);
     color: rgba(251, 151, 170, 1);
     border-top:rgb(203, 197, 197) 1px solid;
+    padding: 25px 0px 0px 40px;
+    
 }
+
 #quadro_tabela{
     grid-area: quadro_tabela;
-    background-color: aquamarine;
+    background-color: white;
 }
 li{
     list-style: none;
