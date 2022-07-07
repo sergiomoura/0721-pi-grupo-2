@@ -1,17 +1,49 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: #FFDFE5;
     font-family: 'lusitana';
+    font-size: 16px;
     background-image: url(/design/img/paleta1.jpg);
     background-size: cover;
     z-index: -1;
-    backdrop-filter:initial;
+    backdrop-filter: initial;
 }
 
-header{
+.menu {
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    float: left;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+}
+
+.menu li a {
+    color: #FFDFE5;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #FC6582;
+    color: #FFDFE5;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+header {
     color: #FFDFE5;
     display: flex;
     justify-content: center;
 }
+
 
 /*div {
     width: 300px;
@@ -20,13 +52,40 @@ header{
 }*/
 
 .logo img {
-    max-width:200px;
-    max-height:150px;
+    max-width: 200px;
+    max-height: 150px;
     width: auto;
     height: auto;
 }
 
-#menu-container{
+h1{
+    color: #FC6582;
+    text-align: justify;
+}
+
+h2{
+    color: #FC6582;
+    text-align: justify;
+}
+
+div .lado-lado{
     display: grid;
-    justify-content: space-around;
+    
+}
+.produto img{
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produto{
+    display: inline-block;
+    
+}
+
+.produto a:hover{
+    justify-content: space-between;
+    
 }
