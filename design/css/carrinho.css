@@ -1,5 +1,5 @@
 body{
-
+    margin: 0;
 }
 #conteiner{
     display: grid;
@@ -12,11 +12,36 @@ body{
 }
 #header{
     grid-area: header;
-    background-color: aqua;
+    display: flex;
+    background-image: url('./Rectangle\ 64\ \(1\).png');
+    background-size:1200px 190px;
+    background-color: rgba(255, 159, 178, 0.545);
+}
+#imagem_fundo{
+    width:1200px;
+    height: 150px;
+}
+#logo{
+    justify-content: flex-start;
+    position: absolute;
+    height: 120px;
+}
+#informacoes_contato{
+    justify-content:flex-end;
+    height:90px;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left:1010px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#informacoes_contato>li{
+    padding-bottom: 10px;
 }
 #carrinho{
     grid-area: carrinho;
-    background-color: pink;
+    background-color: rgba(255, 248, 248, 1);
+    color: rgba(251, 151, 170, 1);
+    border-top:rgb(203, 197, 197) 1px solid;
 }
 #quadro_tabela{
     grid-area: quadro_tabela;
