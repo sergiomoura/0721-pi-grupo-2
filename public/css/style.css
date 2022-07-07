@@ -1,78 +1,32 @@
-body {
+body{
     background-color: #FFDFE5;
-    margin: auto;
-    display: flex;
     font-family: 'lusitana';
     background-image: url(/design/img/paleta1.jpg);
     background-size: cover;
     z-index: -1;
+    backdrop-filter:initial;
 }
 
-header {
-    position: fixed;
-    padding: 70px;
-}
-
-header .container {
+header{
     color: #FFDFE5;
-    display: fixed;
-    justify-content: space-between;
-    align-items: center;
-}
-
-h2 {
-    position: absolute;
-    height: 33px;
-    width: 324px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    font-family: 'lusitana';
-}
-
-h1 {
-    position: absolute;
-    height: 33px;
-    width: 324px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    font-family: 'lusitana';
-}
-
-.logo {
-    position: fixed;
-    border-radius: 10px;
-    width: 5px;
-}
-
-#menu-container {
     display: flex;
-    text-align: justify;
-}
-
-.container-lado-lado{
-    display: flex;
-    height: 29px;
-    width: 32px;
-    border-radius: 10px;
-    flex-direction: row;
-}
-
-.produto {
-    border-radius: 10px;
     justify-content: center;
 }
 
-main {
-    padding: 20px;
+/*div {
+    width: 300px;
+    height: 200px;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem 
+}*/
+
+.logo img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }
 
-p {
-    text-align: end;
+#menu-container{
+    display: grid;
+    justify-content: space-around;
 }
-
