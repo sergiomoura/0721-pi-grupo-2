@@ -7,7 +7,7 @@ body{
 
 }
 main{
-    background-color: rgb(245, 238, 238);
+    
 
 }
 #conteiner{
@@ -26,7 +26,7 @@ main{
     grid-area: header;
     background-image: url('./Rectangle\ 64\ \(1\).png');
     background-size:100% 100% fixed;
-    background-color: rgba(224, 174, 174, 0.545);
+    background-color: rgba(255, 159, 178, 0.39);
    
     display: grid;
     grid-template-columns: auto auto;
@@ -50,42 +50,145 @@ main{
     display: flex;
     justify-content: flex-end;
     padding-bottom: 5px;
-    
 }
 
 
 #carrinho{
     grid-area: carrinho;
-    background-color: rgba(255, 248, 248, 1);
     color: rgba(251, 151, 170, 1);
     border-top:rgb(203, 197, 197) 1px solid;
-    padding: 25px 0px 0px 40px;
-    
+    font-size: 20px;
+}
+#carrinho>h3{
+    padding: 25px 0px 0px 70px;
+    font-size: 30px;
 }
 #quadro_tabela{
     grid-area: quadro_tabela;
     color: black;
-    background-color: white;
-    width: 110px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    max-width: max-content;
+    min-width: 320px;
+    margin: auto;
+
 }
 #header_quadro_tabela{
     grid-area: header_quadro_tabela;
-    background-color: white;
+    margin-bottom: 10px;
     display: flex;
 }
 .cabecalho{
     justify-content:space-around;
-    padding-left: 160px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-bottom: 0;
 }    
 #informacoes_do_produto{
     grid-area: informacoes_do_produto;
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    margin-top: 40px;
+    grid-template-areas: 
+    "foto descricao quantidade preco_tabela subtotal";
+    
+}
+#informacoes_do_produto>p{
+    justify-content:space-around;
+}
+#foto{
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+#foto>img{
+    grid-area: foto;
+    height: 70px;
+    width: 120px;
+}
+#descricao{
+    grid-area: descricao;
+    width: 200px;   
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+#quantidade{
+    grid-area: quantidade;
+    padding-left: 70px;
+    width: fit-content;
+}
+
+
+#preco_tabela{
+    grid-area: preco_tabela;
+    margin-right: 10px;
+    padding-left: 140px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 24px;
+}
+#subtotal{
+    grid-area: subtotal;
+    width: fit-content;
+    padding-left:70px;
+    font-weight: 600;
+    font-size: 24px;
 }
 #preco{
     grid-area: preco;
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0);
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    margin-right: 55px;
+    margin-top: 40px;
+    font-size: larger;
+
+}
+#preco>ul>li{
+    padding-bottom: 10px;
+}
+#preco_total{
+    font-size: 36px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right:55px ;
+}
+#finalizacao{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#finalizacao *{
+    padding-right: 5px;
+}
+#comprando{
+    text-decoration: none;
+    color: rgb(234, 127, 145);
+    
+}
+#botao{
+    padding: 15px 50px;
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(251, 151, 170, 1);
+    border: none;
 }
 li{
     list-style: none;
+}
+#botao:hover{
+    border: transparent 4px solid
+}
+.linha{
+    margin: 0;
+}
+#linha{
+    margin:0;
+    padding-top: 40px;
 }
