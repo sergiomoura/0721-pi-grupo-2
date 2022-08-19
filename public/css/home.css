@@ -1,0 +1,72 @@
+#header {
+
+    grid-area: header;
+    background-image: url(/design/img/Rectangle\ 64\ \(1\).png);
+    background-size: 100% 100% fixed;
+    background-color: rgba(255, 159, 178, 0.39);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo  informacoes_contato";
+  }
+  
+  #logo {
+    grid-area: logo;
+    padding-top: 20px;
+    padding-left: 580px;
+    height: 140px;
+    background-color: rgba(127, 255, 212, 0);
+  
+  }
+  
+  #conteiner_informacoes {
+    margin-top: 50px;
+    margin-right: 40px;
+  }
+  
+  /* .informacoes_contato{
+    grid-area: informacoes_contato;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+  }
+   */
+  .conteiner {
+    display: grid;
+  
+  }
+  
+  .box1 {
+    height: 30px;
+    background-color: rgb(255, 240, 240);
+    border-radius: 7px;
+  }
+  
+  .texto {
+    color: black;
+    text-align: center;
+  
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .link {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lusitana', serif;
+    margin: 7px;
+    font-size: 20px;
+  }
+  
+  .bloco2 {
+    height: 100px;
+    background-image: url(/design/img/base.jpg);
+    border-radius: 5px;
+    padding: 9px;
+  
+  }
