@@ -24,7 +24,7 @@ main{
 }
 #header{
     grid-area: header;
-    background-image: url('./Rectangle\ 64\ \(1\).png');
+    background-image: url('../img/Rectangle\ 64\ \(1\).png');
     background-size:100% 100% fixed;
     background-color: rgba(255, 159, 178, 0.39);
    
@@ -177,13 +177,14 @@ main{
     font-weight: bold;
     color: white;
     background-color: rgba(251, 151, 170, 1);
-    border: none;
+    border: transparent 4px solid
 }
 li{
     list-style: none;
 }
 #botao:hover{
-    border: transparent 4px solid
+    background-color: rgb(241, 131, 152);
+    cursor: pointer;
 }
 .linha{
     margin: 0;

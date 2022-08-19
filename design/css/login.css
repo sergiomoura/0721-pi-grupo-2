@@ -159,23 +159,14 @@ form input {
 
 
 /* Para laptos e desktops */
-/* @media(min-width:768px) and (max-width:1280px){
+@media(min-width:768px) and (max-width:1280px){
   body{
     background-color: rgb(160, 145, 145);
-    width: 80%;
-  }
-  .classe {
-    margin: 10%;
-    position: relative;
-    width: 130%;
-    right: 30%;
-  }
-} */
-/* Para telas grandes */
-/* @media(min-width:1281px){
-  main{
-      width: 950px;
-      font-size:17px
+    
   }
   
-} */
+}
+/* Para telas grandes */
+@media(min-width:1281px){
+  
+}
