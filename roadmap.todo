@@ -1,2 +1,25 @@
 E vamos de roadmap para nosso projeto integrador!
 nn sei fazer caixinhas .. ,_,
+
+Padrões de Layout:
+    Cores:
+                      cabeçalho: #FF9FB2 50%
+                      letras do menu/cabeçalho: #FC6582 53%
+                      Painel do Usuário:
+                      menu do painel do usuário: FC8FA4 78%
+                      cabeçalho do quadro de pedidos: FC8FA4 100%
+                      Rosinha abaixo do cabeçalho do quadro de pedidos: FDC3CE 90%
+                      Cinza do painel de pedidos: D9D9D9 53%
+                      Branco que possui as informações do produto: FDFDFD 100%
+                      Branco/cinza abaixo do outro branco: FFFFFF 58%
+                     Produto interno:
+                     Cor de fundo: FFF8F8 100%
+                     Cor do botão, quantidade: FB97AA 100%
+                     Palavra detalhes: FE748F 100%
+                     Carrinho:
+                     Cor de fundo: FFF8F8 100%
+                     Botão: FB97AA
+     Fontes:
+                     Lusitana
+                     Painel do usuário: Inter
+                     Cabeçalho do quadro de pedidos: Light inter
