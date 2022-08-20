@@ -8,8 +8,8 @@ body {
     font-family: 'lusitana';
     font-size: 16px;
     background-color: rgba(255, 192, 203, 0.23);
-    background-image: url(/design/img/paleta1.jpg);
-    background-color: #FFDFE5; 
+    background-image: url(/public/img/paleta1.jpg);
+    /* background-color: #FFDFE5;  */
     background-size: cover;
     z-index: -1;
 }
@@ -42,9 +42,9 @@ header {
 #header{
     grid-area: header;
     display: flex;
-    background-image: url('/design/img/retangulozinho.jpeg');
-    background-size: 1200px 190px;
-    background-color: rgba(148, 80, 94, 0.545);
+    background-image: url('/public/img/Rectangle\ 64\ \(1\).png');
+    background-size: 1200px 190px cover;
+    background-color: rgba(148, 80, 94, 0.545); 
     overflow: hidden;
 }
 
@@ -63,6 +63,8 @@ header {
     position: absolute;
     justify-content: end;
 } */
+
+/*
 input[type='search'], input[type='text']{
     border: none;
     padding: 5px;
@@ -79,15 +81,15 @@ header input[type="search"] {
     font-size: 2rem;
     color: #FFF;
     background-color: rgba(255,255,255,0.0);
-    background-image: url(/design/img/—Pngtree—pink\ magnifying\ glass\ classification\ table_4536491.png);
+    width: 32px;
+    transition: width 0.5s ease-in-out;
+    background-image: url(/public/img/—Pngtree—pink\ magnifying\ glass\ classification\ table_4536491.png);
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 0px;
-    width: 32px;
-    background-size: 32px 32px;
     background-blend-mode: lighten;
-    transition: width 0.5s ease-in-out;
-}
+    background-size: 32px 32px; 
+}*/
 
  #menu {
     list-style: none;
@@ -121,7 +123,7 @@ ul{
     list-style: none;
 
 }
-
+/* 
 h1{
     color: #FC6582;
     text-align: center;
@@ -165,9 +167,11 @@ div #lado-lado{
     width: 25px;
     height: 15px;
     position: absolute;
-}
+} */
 
-/*div {
+/*
+Dexar quieto por enuquanto!!
+div {
     width: 300px;
     height: 200px;
     overflow: hidden;  Faz o div não aumentar a altura por causa da imagem 
