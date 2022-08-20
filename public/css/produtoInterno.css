@@ -1,0 +1,44 @@
+body{
+    margin: 0%;
+}
+#conteiner{
+    display: grid;
+    grid-template-columns:  auto ;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "carrinho"
+    "quadro_tabela"
+    "header_quadro_tabela"
+    "informacoes_do_produto"
+    "preco";   
+}
+header{
+    grid-area: header;
+    background-image: url('../img/Rectangle\ 64\ \(1\).png');
+    background-size:100% 100% fixed;
+    background-color: rgba(255, 159, 178, 0.39);
+   
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo  informacoes_contato";
+}
+#logo{
+    grid-area: logo;
+    padding-top: 20px;
+    height: 140px;
+    background-color: rgba(127, 255, 212, 0);
+}
+#conteiner_informacoes{
+    margin-top: 50px;
+    margin-right: 40px;
+}
+.informacoes_contato{
+    grid-area: informacoes_contato;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+}
