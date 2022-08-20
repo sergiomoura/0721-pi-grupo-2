@@ -1,0 +1,32 @@
+body{
+    margin: 0%;
+}
+
+header{
+    background-image: url('../img/Rectangle\ 64\ \(1\).png');
+    background-size:100% 100% fixed;
+    background-color: rgba(255, 159, 178, 0.39);
+    display: grid;
+    grid-template-areas:
+    "logo  informacoes_contato";
+}
+#logo{
+    grid-area: logo;
+    padding-top: 20px;
+    height: 140px;
+    background-color: rgba(127, 255, 212, 0);
+}
+#conteiner_informacoes{
+    margin-top: 50px;
+    margin-right: 40px;
+}
+.informacoes_contato{
+    grid-area: informacoes_contato;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+}
+.informacoes_contato>a>img{
+    height: 17px;
+}
