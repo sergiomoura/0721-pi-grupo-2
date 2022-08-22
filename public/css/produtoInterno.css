@@ -2,7 +2,7 @@ body{
     margin: 0%;
 }
 
-header{
+header>#conteiner_cabecalho{
     background-image: url('../img/Rectangle\ 64\ \(1\).png');
     background-size:100% 100% fixed;
     background-color: rgba(255, 159, 178, 0.39);
@@ -20,13 +20,44 @@ header{
     margin-top: 50px;
     margin-right: 40px;
 }
-.informacoes_contato{
+#conteiner_informacoes>*{
     grid-area: informacoes_contato;
     width: auto;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 5px;
 }
-.informacoes_contato>a>img{
-    height: 17px;
+#conteiner_informacoes>*>a>img{
+    height: 30px;
+}
+.pesquisa_sacola{
+    background-color: aliceblue;
+    justify-items:flex-end;
+}
+.pesquisa_sacola>a{
+    background-color: black;
+}
+#conteiner_nav{  
+    border-bottom: 1px solid rgb(225, 225, 225);
+    margin: 0%;
+}
+#conteiner_nav>nav{
+    margin: 0%;
+}
+#conteiner_nav>nav>ul{
+    display:flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+}
+#conteiner_nav>nav>ul>li>a{
+    text-decoration: none;
+    color:rgb(218, 162, 162);
+    width: 10px;
+    font-size: 16px;
+}
+#conteiner_nav>nav>ul>li>a:hover{
+    text-decoration: underline;
 }
