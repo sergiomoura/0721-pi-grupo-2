@@ -1,63 +1,138 @@
-body{
+body {
     margin: 0%;
 }
 
-header>#conteiner_cabecalho{
+header>#conteiner_cabecalho {
     background-image: url('../img/Rectangle\ 64\ \(1\).png');
-    background-size:100% 100% fixed;
+    background-size: 100% 100% fixed;
     background-color: rgba(255, 159, 178, 0.39);
     display: grid;
     grid-template-areas:
-    "logo  informacoes_contato";
+        "logo  informacoes_contato";
 }
-#logo{
+
+#logo {
     grid-area: logo;
     padding-top: 20px;
     height: 140px;
     background-color: rgba(127, 255, 212, 0);
 }
-#conteiner_informacoes{
+
+#conteiner_informacoes {
     margin-top: 50px;
     margin-right: 40px;
 }
-#conteiner_informacoes>*{
+
+#conteiner_informacoes>* {
     grid-area: informacoes_contato;
     width: auto;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 5px;
 }
-#conteiner_informacoes>*>a>img{
+
+#conteiner_informacoes>*>a>img {
     height: 30px;
 }
-.pesquisa_sacola{
+
+.pesquisa_sacola {
     background-color: aliceblue;
-    justify-items:flex-end;
+    justify-items: flex-end;
 }
-.pesquisa_sacola>a{
+
+.pesquisa_sacola>a {
     background-color: black;
 }
-#conteiner_nav{  
+
+#conteiner_nav {
     border-bottom: 1px solid rgb(225, 225, 225);
     margin: 0%;
 }
-#conteiner_nav>nav{
+
+#conteiner_nav>nav {
     margin: 0%;
 }
-#conteiner_nav>nav>ul{
-    display:flex;
+
+#conteiner_nav>nav>ul {
+    display: flex;
     list-style: none;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 5px;
 }
-#conteiner_nav>nav>ul>li>a{
+
+#conteiner_nav>nav>ul>li>a {
     text-decoration: none;
-    color:rgb(218, 162, 162);
+    color: rgb(218, 162, 162);
     width: 10px;
     font-size: 16px;
 }
-#conteiner_nav>nav>ul>li>a:hover{
+
+#conteiner_nav>nav>ul>li>a:hover {
     text-decoration: underline;
+}
+
+main {
+    background-color: rgba(250, 235, 215, 0.62);
+    width: 100%;
+}
+
+#imagens_descricao {
+    display: flex;
+    background-color: brown;
+    margin: 10px 0;
+    padding: 40px 10px;
+}
+
+#imagens {
+    width: 50%;
+    background-color: aqua;
+}
+
+/* coisas de imagens */
+
+#descricao {
+    width: 50%;
+    background-color: rgb(170, 238, 219);
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+#preco {
+    background-color: antiquewhite;
+    list-style: none;
+    margin: 0;
+}
+
+#preco_alto {
+    font-size: 40px;
+}
+
+table {
+    background-color: rgb(252, 252, 255);
+    
+    margin: 20px 0;
+}
+
+#quantidade {
+    background-color: rgb(230, 131, 161);
+    padding: 9px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+.inf{
+    
+    padding: 20px 16px;
+}
+#botao_carrinho>button {
+    padding: 13px 27px;
+    background-color: rgb(230, 131, 161);
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
 }
