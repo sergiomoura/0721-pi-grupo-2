@@ -1,34 +1,40 @@
-body{
+body {
     margin: 0%;
 }
-header{
+
+header {
     background-image: url('../img/Rectangle\ 64\ \(1\).png');
-    background-size:100% 100% fixed;
+    background-size: 100% 100% fixed;
     background-color: rgba(255, 159, 178, 0.39);
     display: grid;
     grid-template-areas:
-    "logo  informacoes_contato";
+        "logo  informacoes_contato";
 }
-#logo{
+
+#logo {
     grid-area: logo;
     padding-top: 20px;
     height: 140px;
     background-color: rgba(127, 255, 212, 0);
 }
-#conteiner_informacoes{
+
+#conteiner_informacoes {
     margin-top: 50px;
     margin-right: 40px;
 }
-.informacoes_contato{
+
+.informacoes_contato {
     grid-area: informacoes_contato;
     width: auto;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 5px;
 }
-.informacoes_contato>a>img{
+
+.informacoes_contato>a>img {
     height: 17px;
 }
+
 /* *{
     font-family: 'lusitana';
     font-size: 16px;
@@ -36,7 +42,7 @@ header{
     padding: 0;
     margin: 0;
 }  */
-body {
+/* body {
     margin: 0;
     max-width: 100%;
     min-width:320px;
@@ -48,17 +54,17 @@ body {
     background-color: #FFDFE5;
     background-size: cover;
     z-index: -1; */
-}
- /* header {
-    /* color: #FFDFE5;
+*
+/* header {
+    color: #FFDFE5;
     display: flex;
     justify-content: center;
 }   */
-/* form{
+input form{
     position: absolute;
     justify-content: end;
-} */
-/*
+} 
+
 input[type='search'], input[type='text']{
     border: none;
     padding: 5px;
@@ -81,7 +87,7 @@ header input[type="search"] {
     background-position-x: 0px;
     background-blend-mode: lighten;
     background-size: 32px 32px;
-}*/
+}
  #menu {
     list-style: none;
     height: 120px;
@@ -147,6 +153,9 @@ div #lado-lado{
     height: 15px;
     position: absolute;
 } */
+
+
+
 /*
 Dexar quieto por enuquanto!!
 div {
