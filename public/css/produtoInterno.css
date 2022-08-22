@@ -74,29 +74,32 @@ header>#conteiner_cabecalho {
 }
 
 main {
-    background-color: rgba(250, 235, 215, 0.62);
+
     width: 100%;
 }
 
 #imagens_descricao {
     display: flex;
-    background-color: brown;
+
     margin: 10px 0;
     padding: 40px 10px;
 }
 
 #imagens {
     width: 50%;
-    background-color: aqua;
 }
 
 /* coisas de imagens */
 
 #descricao {
     width: 50%;
-    background-color: rgb(170, 238, 219);
     display: flex;
     flex-direction: column;
+}
+
+#descricao>p {
+    margin: 10px 30px;
+    padding-top: 0;
 }
 
 h2 {
@@ -104,9 +107,8 @@ h2 {
 }
 
 #preco {
-    background-color: antiquewhite;
     list-style: none;
-    margin: 0;
+    margin: 20px 0;
 }
 
 #preco_alto {
@@ -114,25 +116,47 @@ h2 {
 }
 
 table {
-    background-color: rgb(252, 252, 255);
+    font-size: 20px;
+    margin: 30px 30px 0 30px;
+    border: 1px dotted rgb(166, 166, 166);
     
-    margin: 20px 0;
 }
-
 #quantidade {
     background-color: rgb(230, 131, 161);
     padding: 9px;
-    border-radius: 20px;
     color: aliceblue;
+    font-size: 17px;
+    letter-spacing: 3px;
 }
-.inf{
-    
-    padding: 20px 16px;
+.inf {
+    padding: 40px 7px;
+    color: rgb(47, 46, 46);
+    margin: 30px 0;
 }
+
+.mais_e_menos {
+    background-color: transparent;
+    border: lightpink 1px solid;
+    cursor: pointer;
+    color: rgb(156, 112, 120);
+}
+
+.mais_e_menos:active {
+    background-color: rgba(233, 204, 212, 0.647);
+}
+
 #botao_carrinho>button {
-    padding: 13px 27px;
-    background-color: rgb(230, 131, 161);
+    padding: 13px 47px;
+    background-color: rgba(226, 120, 152, 0.911);
     border: none;
     border-radius: 20px;
     color: aliceblue;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px rgb(74, 74, 74);
+}
+
+#botao_carrinho>button:active {
+    background-color: rgba(227, 60, 113, 0.735);
 }
