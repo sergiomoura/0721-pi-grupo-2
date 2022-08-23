@@ -1,6 +1,6 @@
 body {
     margin: 0%;
-    
+   background: repeating-linear-gradient(rgb(255, 250, 250),rgba(18, 18, 17, 0.154));
 }
 
 header>#conteiner_cabecalho {
@@ -53,8 +53,9 @@ header>#conteiner_cabecalho {
 }
 
 #conteiner_nav {
-    border-bottom: 1px solid rgb(225, 225, 225);
+    border: 1px solid rgba(16, 16, 16, 0.148);
     margin: 0%;
+   
 }
 
 #conteiner_nav>nav {
@@ -72,7 +73,7 @@ header>#conteiner_cabecalho {
 
 #conteiner_nav>nav>ul>li>a {
     text-decoration: none;
-    color: rgb(218, 162, 162);
+    color: rgb(142, 102, 127);
     width: 10px;
     font-size: 16px;
 }
@@ -87,15 +88,80 @@ main {
 
 #imagens_descricao {
     display: flex;
-
     margin: 10px 0;
     padding: 40px 10px;
+    
 }
 
 #imagens {
+    margin: 100px 0px 680px 30px;
+    background-color: azure;
+    padding: 0%;
+    height:fit-content;
     width: 50%;
+    justify-content: center;
+}
+.content{
+    height:580px ;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    
+    width: 45%; 
+}
+.navigation{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    display:flex;
+}
+.bar{
+    width: 100px;
+    height: 17px;
+    border: 2px solid rgb(17, 17, 17);
+    margin: 6px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover{
+    background:rgba(0, 0, 0, 0.691);
+    
 }
 
+.slides input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    right: 200px;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~ .s1{
+    margin-left:0 ;
+}
+#slide2:checked ~ .s1{
+    margin-left:-20%;
+}
+#slide3:checked ~ .s1{
+    margin-left:-40%;
+}
+#slide4:checked ~ .s1{
+    margin-left:-60%;
+}
+#slide5:checked ~ .s1{
+    margin-left:-80%;
+}
 /* coisas de imagens */
 
 #descricao {
@@ -125,16 +191,20 @@ h2 {
 table {
     font-size: 20px;
     margin: 30px 30px 0 30px;
-    border: 1px dotted rgb(166, 166, 166);
-
+    border: 4px do rgb(151, 151, 151);
+    border-top: none;
+    border-bottom: none;
+    background-color: rgba(240, 248, 255, 0.51);
 }
 
 #quantidade {
-    background-color: rgb(230, 131, 161);
+    background-color: rgba(215, 117, 147, 0.756);
     padding: 9px;
-    color: aliceblue;
+
+    color: white;
     font-size: 17px;
     letter-spacing: 3px;
+    
 }
 
 .inf {
