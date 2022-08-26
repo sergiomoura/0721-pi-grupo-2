@@ -9,4 +9,4 @@ router.get('/listagem', homeController.showListagem);
 router.get('/produto', homeController.showProdutoInterno);
 router.get('/finalizacao', homeController.showFinalizacao);
 router.get('/painel' , homeController.showPainel);
-module.exports = router
+module.exports = router;
