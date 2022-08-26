@@ -1,0 +1,35 @@
+body,html{
+margin: 0;
+padding: 0;
+}
+.batom{
+height: 200px;
+
+}
+
+.base{
+height: 200px;
+}
+.paleta{
+    height: 200px;
+    }
+
+.carrosel{
+    display: flex ;
+    list-style: none;
+    width: 1200px;
+    height:200px ;
+    margin: 60px auto;
+
+}
+ .corrosel img 
+ {
+position: relative;
+animation: slide 15s infinite ease-out;
+ }
+
+ @keyframes slide{
+    0%{left: 0px}
+
+    30%{left: -400px}
+ }
