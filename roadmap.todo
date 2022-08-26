@@ -1,5 +1,27 @@
+Ana 
+No index.js
+    ☐ Criar um servidor express (app)
+    ☐ Fazer com que ele use o homeRouter
+    ☐ fazer o servidor rodar na porta 3000
+Nat
+No homeRouter.js
+    ☐ Criar e exportar um roteador com 6 rotas get:
+        - '/' encaminha para homeController.showHome
+        - '/carrinho' encaminha para homeController.showCarrinho
+        - e assim em diante... uma rota para cada página desenhada
+Lara e Geo
+No homeController.js
+    ☐ Criar as funções
+        - showHome,
+        - showCarrinho,
+        - showFinalização
+        ...
+
+
 E vamos de roadmap para nosso projeto integrador!
 nn sei fazer caixinhas .. ,_,
+
+qual é o comando pra fazer as caixinhas?
 
 Padrões de Layout:
     Cores:

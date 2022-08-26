@@ -1,0 +1,35 @@
+
+body{
+    background-color: white;
+    margin: 0;
+}
+.container{
+    grid-template-areas: 
+    "usuario_infomacoes", " header"
+    "usuario_infomacoes", "main";
+}
+header{
+    grid-area:header;
+    background-image: url(/public/img/Rectangle\ 64\ \(1\).png);
+    background-color: rgba(255, 159, 178, 0.39);
+    margin: 0;
+    width: 100%;
+    padding: 9px;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+}
+h1{
+    font-size: 37px;  
+    color: rgb(212, 85, 85);  
+    font-family: 'Lusitana';
+    font-weight: 400;
+    text-align: center;
+    
+}
+input{
+    border-radius: 75px;
+    padding: 10px;
+    width: 500px;
+    background-image: url(/public/img/—Pngtree—pink\ magnifying\ glass\ classification\ table_4536491.png);
+}
