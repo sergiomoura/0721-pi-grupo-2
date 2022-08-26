@@ -18,7 +18,7 @@ const paginasController = {
         res.render('finalizacao.ejs')
     },
     showPainel:(req, res)=>{
-        res.render('painel.ejs')
+        res.render('painelDeUsuario.ejs')
     }
 }
 
