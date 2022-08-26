@@ -1,0 +1,165 @@
+body {
+    margin: 0%;
+}
+
+header {
+    background-image: url('../img/Rectangle\ 64\ \(1\).png');
+    background-size: 100% 100% fixed;
+    background-color: rgba(255, 159, 178, 0.39);
+    display: grid;
+    grid-template-areas:
+        "logo  informacoes_contato";
+}
+
+#logo {
+    grid-area: logo;
+    padding-top: 20px;
+    height: 140px;
+    background-color: rgba(127, 255, 212, 0);
+}
+
+#conteiner_informacoes {
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+.informacoes_contato {
+    grid-area: informacoes_contato;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+}
+
+.informacoes_contato>a>img {
+    height: 17px;
+}
+
+/* *{
+    font-family: 'lusitana';
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}  */
+/* body {
+    margin: 0;
+    max-width: 100%;
+    min-width:320px;
+    margin: auto;
+    background-color: rgba(247, 193, 204, 0.209);
+    /*
+    background-color: rgba(255, 192, 203, 0.23);
+    background-image: url(/public/img/paleta1.jpg);
+    background-color: #FFDFE5;
+    background-size: cover;
+    z-index: -1; */
+*
+/* header {
+    color: #FFDFE5;
+    display: flex;
+    justify-content: center;
+}   */
+input form{
+    position: absolute;
+    justify-content: end;
+} 
+
+input[type='search'], input[type='text']{
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #000;
+}
+input[type='search']:focus, input[type='text']:focus{
+    outline: 2px solid var(--cor-destaque);
+}
+header input[type="search"] {
+    font-size: 2rem;
+    color: #FFF;
+    background-color: rgba(255,255,255,0.0);
+    width: 32px;
+    transition: width 0.5s ease-in-out;
+    background-image: url(/public/img/—Pngtree—pink\ magnifying\ glass\ classification\ table_4536491.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0px;
+    background-blend-mode: lighten;
+    background-size: 32px 32px;
+}
+ #menu {
+    list-style: none;
+    height: 120px;
+    position: absolute;
+    border: 1px solid #FFDFE5;
+    float: left;
+}
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #FFDFE5;
+}
+.menu li a {
+    color: #882F3F;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    width: 214px;
+}
+.menu li a:hover {
+    background: #FFD4DC;
+    color: #882F3F;
+    text-shadow: 0px 0px 5px #fff;
+}
+li{
+    list-style: none;
+}
+/*
+h1{
+    color: #FC6582;
+    text-align: center;
+}
+h2{
+    color: #FC6582;
+    text-align: center;
+}
+div #lado-lado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+#produto img{
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+#produto{
+    display: flex;
+}
+#footer{
+    background-color: #FC6582;
+    border-radius: 5px;
+    position: relative;
+}
+#contato{
+    color: #fff;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+} */
+
+
+
+/*
+Dexar quieto por enuquanto!!
+div {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;  Faz o div não aumentar a altura por causa da imagem
+}*/
