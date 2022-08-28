@@ -1,9 +1,13 @@
 // Criar um servidor express (app)
 const express = require("express");
+const path = require('path');
 //importando o homeRouter 
 const homeRouter = require('./router/homeRouter');
 
 const app = express();
+
+// Configurando a pasta public como contenedora dos arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
 
 //defini que a view engine sera ejs
 
