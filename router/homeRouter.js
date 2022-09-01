@@ -8,5 +8,5 @@ router.get('/login', homeController.showLogin);
 router.get('/listagem', homeController.showListagem);
 router.get('/produto', homeController.showProdutoInterno);
 router.get('/finalizacao', homeController.showFinalizacao);
-router.get('/painelDeUsuario' , homeController.showPainel);
+router.get('/painel' , homeController.showPainel);
 module.exports = router
