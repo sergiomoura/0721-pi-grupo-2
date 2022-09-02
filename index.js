@@ -1,5 +1,5 @@
 // Criar um servidor express (app)
-const express = require("express");
+const express = require('express');
 //importando o homeRouter 
 const homeRouter = require('./router/homeRouter')
 const app = express();
