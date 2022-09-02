@@ -149,6 +149,7 @@ main {
 .slide img{
     width: 100%;
     height: 100%;
+    /* object-fit: cover; */
 }
 #slide1:checked ~ .s1{
     margin-left:0 ;
@@ -284,7 +285,15 @@ table {
 }
 
 footer{
+    background-color: antiquewhite;
+    padding: 30px 50px;
+    display: flex;
+    height: 200px;
     
+}
+footer>article{
+    width: 401px;
+    background-color: aqua;
 }
 /* .informacoes{
     height:220px;
