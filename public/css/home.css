@@ -1,4 +1,93 @@
-#header {
+header>#conteiner_cabecalho {
+  background-image: url('../img/Rectangle\ 64\ \(1\).png');
+  background-size: 100% 100% fixed;
+  background-color: rgba(237, 160, 160, 0.866);
+  width: 100%;
+  display: flex;
+}
+#conteiner_cabecalho>div {
+  width: 50%;
+}
+#logo {
+  grid-area: logo;
+  padding-top: 20px;
+  height: 140px;
+}
+#conteiner_informacoes {
+  margin-top: 50px;
+  margin-right: 40px;
+  width: 50%;
+}
+#conteiner_informacoes>* {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+}
+#conteiner_informacoes>*>a>img {
+  height: 30px;
+}
+.pesquisa_sacola {
+  margin-left: 30px;
+}
+.pesquisa_sacola>a {
+  display: flex;
+  height: 30px;
+  width: fit-content;
+}
+.pesquisa_sacola>a>img {
+  justify-content: flex-end;
+}
+#conteiner_nav {
+  border-bottom: 3px double rgba(36, 36, 34, 0.188);
+  margin: 0%;
+}
+#conteiner_nav>nav {
+  margin: 0%;
+}
+#conteiner_nav>nav>ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 5px;
+}
+#conteiner_nav>nav>ul>li>a {
+  text-decoration: none;
+  color: rgb(142, 102, 127);
+  width: 10px;
+  font-size: 16px;
+}
+#conteiner_nav>nav>ul>li>a:hover {
+  text-decoration: underline;
+}
+body {
+  margin: 0%;
+ background: repeating-linear-gradient(rgb(248, 245, 245rgba(0, 0, 0, 0.542)4));
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  
+}
+
+.base{
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #header {
 
     grid-area: header;
     background-image: url(/public/img/Rectangle\ 64\ \(1\).png);
@@ -33,7 +122,7 @@
     padding-bottom: 5px;
   }
    */
-  .conteiner {
+  /* .conteiner {
     display: grid;
   
   }
@@ -69,4 +158,4 @@
     border-radius: 5px;
     padding: 9px;
   
-  }
+  }  */
