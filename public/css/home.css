@@ -71,20 +71,41 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 
+
 }
 
 .base{
   width: 100% ;
+  
  
 }
 .batom{
-
+  width: 72% ;
+  
 }
 
+.base-serum{
+  width: 100% ;
+}
 
+.Brush{
+  width: 113% ;
+}
 
+.Rectangle{
+  width: 100% ;
+}
+.pincel{
+  width: 100% ;
 
-
+  
+}
+.maquiagem2{
+  width: 100% ;
+}
+.rimel{
+  width: 72%;
+}
 
 
 
