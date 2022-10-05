@@ -285,90 +285,49 @@ table {
 }
 
 footer{
-    background-color: antiquewhite;
-    padding: 30px 50px;
+    background-image: url('../img/Rectangle\ 64\ \(1\).png');
+    width: 100%;
+    height: 164px;
+    background-color: rgba(237, 160, 160, 0.866);
     display: flex;
-    height: 200px;
-    
+    justify-content: space-around;
+    padding: 20px 0px;
+    font-weight: 500;
 }
 footer>article{
-    width: 401px;
-    background-color: aqua;
+    
 }
-/* .informacoes{
-    height:220px;
-    font-family: 'Press Start 2P', cursiva;
-    padding-top: 20px;
-    background-color: rgba(0, 0, 0, 0.979);
-    border: rgba(15, 113, 98, 0.66) 4px groove;
-    border-top: 7px rgba(8, 118, 125, 0.597) solid;
-    font-size: larger;
-    margin-top: 60px;
+footer>article>ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0%;
 }
-
-.informacoes>ul{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    flex-direction: column;
+#categorias>li>a{
+    color: black;
+}
+#contato{
     align-self: center;
-    background-color: #fffcfffd;
-    padding:10px 0 20px 0 ;
 }
-.informacoes_geo>ul>li{
-    list-style: none;
-    padding-bottom: 20px;
-
+#sobre{
+    align-items:center ;
 }
-#desenvolvedora{
-    margin-left:0 ;
-    align-self:center;
-    font-size: 13px;
-    width:fit-content;
-    color: rgba(0, 0, 0, 0.622);
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-}
-
-#desenvolvedoras{
+#robos{
     display: flex;
-    justify-content:space-between ;
-    background-color: rgba(6, 6, 6, 0);
-    list-style: none;
+    justify-content: space-between;
+    
 }
-#desenvolvedoras>li{
-    background-color: aquamarine
+#robos>p{
+   
 }
-#desenvolvedoras>li>a{
-    background-color: aquamarine;
+#robos>p>a{
+    
+    
 }
-#desenvolvedoras>li>a>img{
-    height: 150px;
-    width: 100px;
-    background-color: aliceblue;
-} */
-
-
-/* @keyframes animacao_git{
-    to{
-        height: 30px;
-        width: 35px;}
-    from{opacity:0% ;
-    box-shadow: #050704 10px inset ;}
+#robos>p>a>img{
+    height: 70px;
+    gap: 20px;
+    border: 1px solid rgb(189, 128, 36);
 }
-@keyframes animacao_linkedin{
-    to{
-        height: 22px;
-        width: 22px;
-        padding: 4px 8px 4px 8px;
-    }
-    from{
-        opacity:0% ;
-    }
-} */
-
-
-
-
 
 
 

@@ -30,7 +30,7 @@
                 </div>
             </ul>
             </div>
-            
+
         </section>
         <section id="conteiner_nav">
             <nav>
@@ -49,41 +49,41 @@
     <main>
         <article id="imagens_descricao">
             <section id="imagens">
-                    <div class="content">
-                        <div class="slides">
-                            <input type="radio" name="slide" id="slide1" checked>
-                            <input type="radio" name="slide" id="slide2">
-                            <input type="radio" name="slide" id="slide3">
-                            <input type="radio" name="slide" id="slide4">
-                            <input type="radio" name="slide" id="slide5">
+                <div class="content">
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide4">
+                        <input type="radio" name="slide" id="slide5">
 
-                            <div class="slide s1">
-                                <img src="img/maquiagem_ajeitada.jpg" alt="maquiagem Ruby Rose Soft Nude">
+                        <div class="slide s1">
+                            <img src="img/maquiagem_ajeitada.jpg" alt="maquiagem Ruby Rose Soft Nude">
 
-                            </div>
-                            <div class="slide">
-                                <img src="img/maquiagem_aberta.jpg" alt="maquiagem Ruby Rose Soft Nude">
-                            </div>
-                            <div class="slide">
-                                <img src="img/maquiagem_bonita.jpg" alt="maquiagem Ruby Rose Soft Nude">
-                            </div>
-                            <div class="slide">
-                                <img src="/img/maquiagens.jpg" alt="maquiagem Ruby Rose Soft Nude">
-                            </div>
-                            <div class="slide">
-                                <img src="img/maquiagem_principal1.jpg" alt="maquiagem Ruby Rose Soft Nude">
-
-                            </div>
                         </div>
-                        <div class="navigation">
-                            <label class="bar" for="slide1"></label>
-                            <label class="bar"for="slide2"></label>
-                            <label class="bar"for="slide3"></label>
-                            <label class="bar"for="slide4"></label>
-                            <label class="bar"for="slide5"></label>
+                        <div class="slide">
+                            <img src="img/maquiagem_aberta.jpg" alt="maquiagem Ruby Rose Soft Nude">
                         </div>
+                        <div class="slide">
+                            <img src="img/maquiagem_bonita.jpg" alt="maquiagem Ruby Rose Soft Nude">
+                        </div>
+                        <div class="slide">
+                            <img src="/img/maquiagens.jpg" alt="maquiagem Ruby Rose Soft Nude">
+                        </div>
+                        <div class="slide">
+                            <img src="img/maquiagem_principal1.jpg" alt="maquiagem Ruby Rose Soft Nude">
 
+                        </div>
                     </div>
+                    <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                        <label class="bar" for="slide5"></label>
+                    </div>
+
+                </div>
             </section>
             <section id="descricao">
                 <h2>Paleta Soft Nude Feels - Hb1045 - Rubyrose</h2>
@@ -105,19 +105,19 @@
                     </li>
                 </ul>
                 <table summary="Tabela de quantidade de produto">
-                    <thead >
-                        <tr > 
+                    <thead>
+                        <tr>
                             <th id="quantidade" colspan="3" align="start"> Quantidade</th>
                         </tr>
                     </thead>
                     <tbody id="inf_produto">
-                        <tr >
+                        <tr>
                             <td class="inf">Paleta Soft Nude Feels - Hb1045 - Rubyrose</td>
                             <td class="inf">R$ 49,99</td>
                             <td class="inf" align="center">
-                                <button class="mais_e_menos">-</button>
-                                1
-                                <button class="mais_e_menos">+</button>
+                                <button id="Menos" class="mais_e_menos">-</button>
+                                <input type="text" name="inputQtd" id="qtd" value="9">
+                                <button id="Mais" class="mais_e_menos">+</button>
                             </td>
                         </tr>
                     </tbody>
@@ -134,17 +134,20 @@
         <article id="detalhamento">
             <article id="titulos_detalhamento">
                 <p><a href="#detalhes" id="detalhes">Detalhes</a></p>
-                <p><a href="#composicao" id="composicao">Composição</a></p> 
+                <p><a href="#composicao" id="composicao">Composição</a></p>
                 <p><a href="#precausao" id="precausao">Precaução</a></p>
             </article>
             <section id="texto_detalhamento">
-                <p >
-                    Paleta de sombras Soft Nude tem 17 sombras, e 1 primer para olhos, sendo 10 opacas (Strip, Flirt, Private, Perform,
-                    Young Love, Dark Matter, Nap, Diva, Rubin E In love), 2 glitters prensados (Glamory e Wow) 5 e cintilantes (Wish, Dream,
-                    Fantasy e Chic), com tons rosados e nude maravilhosos, são infinitas possibilidades de make! Sua pigmentação é incrível
+                <p>
+                    Paleta de sombras Soft Nude tem 17 sombras, e 1 primer para olhos, sendo 10 opacas (Strip, Flirt,
+                    Private, Perform,
+                    Young Love, Dark Matter, Nap, Diva, Rubin E In love), 2 glitters prensados (Glamory e Wow) 5 e
+                    cintilantes (Wish, Dream,
+                    Fantasy e Chic), com tons rosados e nude maravilhosos, são infinitas possibilidades de make! Sua
+                    pigmentação é incrível
                     e a textura da sombra é super aveludada e macia.
                     <br>
-                    
+
                     Referência: HB-1045<br>
                     Peso: 0,8g cada<br>
                     Dimensões: A 10 x L 17 x C 1
@@ -180,8 +183,8 @@
     </main>
     <footer>
         <article>
-            Categorias <br>
-            <ul>
+            Categorias:
+            <ul id="categorias">
                 <li><a href="#">Skincare</a></li>
                 <li><a href="#">Rosto</a></li>
                 <li><a href="#">Lábios</a></li>
@@ -190,31 +193,69 @@
                 <li><a href="#">Promoções</a></li>
             </ul>
         </article>
-        <article>
-            <ul id="conteiner_informacoes" >
-                <li class="informacoes_contato">
-                     Atendimento ao Cliente
+        <article id="contato">
+            <ul>
+                <li>
+                    Atendimento ao Cliente
                 </li>
-                <li class="informacoes_contato">
+                <li>
                     Central SAC: (31) 9876-5432
                 </li>
-                <li class="informacoes_contato">
+                <li>
                     Email: faleconosco@langglow.com
                 </li>
         </article>
-        <article>
-            Sobre nós: <br>
-            <ul>
-                <li> <a href="https://github.com/Geovannalessa"><img src="img/robo.png" alt=""></a></li>
-                <li> <a href="https://github.com/nati3054"><img src="img/robo.png" alt=""></a></li>
-                <li> <a href="https://github.com/Gabs-ag"><img src="img/robo.png" alt=""></a></li>
-                <li> <a href="https://github.com/AnaCarolll"><img src="img/robo.png" alt=""></a></li>
-                <li> <a href="https://github.com/LalaGomes"><img src="img/robo.png" alt=""></a></li>
+        <article id="sobre">
+            Desenvolvedoras: <br>
+            <div id="robos">
+                <p> <a href="https://github.com/Geovannalessa"><img src="img/robo.png" alt=""></a> </p>
+                <p> <a href="https://github.com/nati3054"><img src="img/robo.png" alt=""></a></p>
+                <p> <a href="https://github.com/Gabs-ag"><img src="img/robo.png" alt=""></a> </p>
+                <p> <a href="https://github.com/AnaCarolll"><img src="img/robo.png" alt=""></a></p>
+                <p> <a href="https://github.com/LalaGomes"><img src="img/robo.png" alt=""></a></p>
 
-            </ul>
+            </div>
 
         </article>
     </footer>
+    <script>
+        const menos = document.getElementById("Menos");
+        const mais = document.getElementById("Mais");
+        let qtd = document.getElementById("qtd")
+
+        menos.addEventListener("click", diminuirQtd);
+        qtd.addEventListener("keypress", input);
+        mais.addEventListener("click", adicionarQtd);
+
+        function diminuirQtd() {
+            let contador = 1;
+            let total = qtd.value -= contador++;
+            // total.innerHTML += contador++
+            if (total == 0) {
+                menos.setAttribute('disabled', '');
+            }
+        }
+        function input(e) {
+            let total = qtd.value;
+            if (e.key === "Enter") {
+                if (total < 0) {
+                    alert("digite uma quantidade possivel!")
+                }
+                if (total >= 100) {
+                    alert("A quantidade máxima do produto é 100 unidades")
+                }
+            }
+        }
+
+        function adicionarQtd() {
+            let contador = 1;
+            let total = qtd.value += contador++;
+            if (total > 100) {
+                mais.setAttribute('disabled', '');
+            }
+        }
+
+    </script>
 </body>
 
 </html>
