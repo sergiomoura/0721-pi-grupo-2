@@ -88,8 +88,7 @@ main {
 }
 
 #imagens {
-    margin: 70px 0px 40px 30px;
-    /* background:radial-gradient(rgba(0, 0, 0, 0.934), rgb(254, 254, 254)); */
+    margin: 0 auto;
     padding: 0%;
     height: 600px;
     width: 49%;
@@ -98,6 +97,7 @@ main {
     border: 1px solid rgba(231, 248, 161, 0.429);
  
 }
+
 
 .content{
     height:500px ;
@@ -184,15 +184,26 @@ h2{
 
 footer{
     background-color: antiquewhite;
+    margin-top: 50px;
     padding: 30px 50px;
     display: flex;
     height: 200px;
 }
-#contato{
-    color:  rgba(251, 151, 170, 1);
-    width: 25px;
-    height: 15px;
-    position: absolute;
+
+footer h3{
+    color: rgba(251, 151, 170, 1);
+    margin-top: 60px;
+}
+#contato {
+width: 100%;
+}
+
+ footer img{
+    grid-area: contato;
+    padding-left: 800px;
+    width: 200px;
+    height: 200px;
+    color:  rgb(255, 255, 255);
 }
 
 
