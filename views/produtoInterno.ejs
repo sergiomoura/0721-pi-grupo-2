@@ -42,7 +42,6 @@
                     <li><a href="#">Lançamentos</a></li>
                     <li><a href="#">Promoções</a></li>
                 </ul>
-
             </nav>
         </section>
     </header>
@@ -82,7 +81,6 @@
                         <label class="bar" for="slide4"></label>
                         <label class="bar" for="slide5"></label>
                     </div>
-
                 </div>
             </section>
             <section id="descricao">
@@ -116,7 +114,7 @@
                             <td class="inf">R$ 49,99</td>
                             <td class="inf" align="center">
                                 <button id="Menos" class="mais_e_menos">-</button>
-                                <input type="text" name="inputQtd" id="qtd" value="9">
+                                <input type="text" name="inputQtd" id="qtd" value="1">
                                 <button id="Mais" class="mais_e_menos">+</button>
                             </td>
                         </tr>
@@ -127,8 +125,6 @@
                         </tr>
                     </tfoot>
                 </table>
-
-
             </section>
         </article>
         <article id="detalhamento">
@@ -213,9 +209,7 @@
                 <p> <a href="https://github.com/Gabs-ag"><img src="img/robo.png" alt=""></a> </p>
                 <p> <a href="https://github.com/AnaCarolll"><img src="img/robo.png" alt=""></a></p>
                 <p> <a href="https://github.com/LalaGomes"><img src="img/robo.png" alt=""></a></p>
-
             </div>
-
         </article>
     </footer>
     <script>
@@ -228,29 +222,31 @@
         mais.addEventListener("click", adicionarQtd);
 
         function diminuirQtd() {
-            let contador = 1;
-            let total = qtd.value -= contador++;
-            // total.innerHTML += contador++
+            let total = Number(qtd.value) -1;
+            qtd.value = total;
             if (total == 0) {
                 menos.setAttribute('disabled', '');
             }
+            mais.removeAttribute('disabled');
         }
         function input(e) {
             let total = qtd.value;
-            if (e.key === "Enter") {
+            if (e.key === "Enter"){
                 if (total < 0) {
-                    alert("digite uma quantidade possivel!")
+                    alert("digite uma quantidade possivel!");
+                    qtd.value = 0;
                 }
-                if (total >= 100) {
-                    alert("A quantidade máxima do produto é 100 unidades")
+                if (total == 99) {
+                    alert("A quantidade máxima do produto é 99 unidades");
+                    qtd.value = 0;
                 }
             }
         }
-
         function adicionarQtd() {
-            let contador = 1;
-            let total = qtd.value += contador++;
-            if (total > 100) {
+            menos.removeAttribute('disabled');
+            let total = Number(qtd.value) +1;
+            qtd.value = total;
+            if (total == 99) {
                 mais.setAttribute('disabled', '');
             }
         }
