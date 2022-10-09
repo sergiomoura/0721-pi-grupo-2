@@ -6,7 +6,6 @@ body {
 
 header>#conteiner_cabecalho {
     background-image: url('../img/Rectangle\ 64\ \(1\).png');
-    background-size: 100% 100% fixed;
     background-color: rgba(237, 160, 160, 0.866);
     width: 100%;
     display: flex;
@@ -20,7 +19,6 @@ header>#conteiner_cabecalho {
     grid-area: logo;
     padding-top: 20px;
     height: 140px;
-    
 }
 
 #conteiner_informacoes {

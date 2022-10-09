@@ -1,136 +1,66 @@
 body{
-    margin: 0;
-    max-width: 100%;
-    min-width:320px;
-    margin: auto;
-    background-color: rgba(247, 193, 204, 0.209);
-
+    margin: 0%;
+    background-color: rgba(255, 255, 255, 0.548);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
-#conteiner{
-    display: grid;
-    grid-template-columns:  auto ;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 
-    "header"
-    "carrinho"
-    "quadro_tabela"
-    "header_quadro_tabela"
-    "informacoes_do_produto"
-    "preco";   
-}
-#header{
-    grid-area: header;
 
+header>#conteiner_cabecalho {
     background-image: url('../img/Rectangle\ 64\ \(1\).png');
-background-color: rgba(237, 160, 160, 0.866);
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "logo  informacoes_contato";
+    background-size: 100% 100% fixed;
+    background-color: rgba(237, 160, 160, 0.866);
+    width: 100%;
+    display: flex;
 }
-#logo{
+
+#conteiner_cabecalho>div {
+    width: 50%;
+}
+
+#logo {
     grid-area: logo;
     padding-top: 20px;
     height: 140px;
-    background-color: rgba(127, 255, 212, 0);
 }
-#conteiner_informacoes{
+    
+#conteiner_informacoes {
     margin-top: 50px;
     margin-right: 40px;
+    width: 50%;
 }
-.informacoes_contato{
-    grid-area: informacoes_contato;
-    width: auto;
+
+#conteiner_informacoes>* {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 5px;
 }
-
-
-#carrinho{
-    grid-area: carrinho;
-    color: rgba(251, 151, 170, 1);
-    border-top:rgb(203, 197, 197) 1px solid;
+h3{
+    padding: 5px 20px;
     font-size: 20px;
+    margin-left: 20px;
+    margin: 0;
 }
-#carrinho>h3{
-    padding: 25px 0px 0px 70px;
-    font-size: 30px;
-}
-#quadro_tabela{
-    grid-area: quadro_tabela;
-    color: black;
-    background-color: rgb(255, 255, 255);
+#quadro_tabela{  
+    background-color: rgb(59, 55, 55);
     padding: 50px;
-    max-width: max-content;
-    min-width: 320px;
-    margin: 60px auto;
-padding-bottom: 30px;
+    margin:  auto;
+    padding-bottom: 30px;
 }
-#header_quadro_tabela{
-    grid-area: header_quadro_tabela;
-    margin-bottom: 10px;
-    display: flex;
+table{
+    background-color: antiquewhite;
+    margin: auto;
 }
-.cabecalho{
-    justify-content:space-around;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 0;
-}    
-#informacoes_do_produto{
-    grid-area: informacoes_do_produto;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
-    margin-top: 40px;
-    grid-template-areas: 
-    "foto descricao quantidade preco_tabela subtotal";
-    
-}
-#informacoes_do_produto>p{
-    justify-content:space-around;
-}
-#foto{
-    margin-left: 30px;
-    margin-top: 0;
-}
+table>tbody>tr>td{
+    align-items:center;
 
-#foto>img{
-    grid-area: foto;
-    height: 70px;
+}
+table>tbody>tr>td>img{
+    height: 80px;
     width: 120px;
 }
-#descricao{
-    grid-area: descricao;
-    width: 200px;   
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-}
-#quantidade{
-    grid-area: quantidade;
-    padding-left: 70px;
-    width: fit-content;
-}
-#preco_tabela{
-    grid-area: preco_tabela;
-    margin-right: 10px;
-    padding-left: 140px;
-    width: fit-content;
-    font-weight: 600;
-    font-size: 24px;
-}
-#subtotal{
-    grid-area: subtotal;
-    width: fit-content;
-    padding-left:70px;
-    font-weight: 600;
-    font-size: 24px;
-}
+
 #preco{
-    grid-area: preco;
+    
     background-color: rgba(165, 42, 42, 0);
     display: flex;
     justify-content: flex-end;
@@ -162,22 +92,25 @@ padding-bottom: 30px;
     color: rgb(234, 127, 145);
     
 }
+
+
+#botao:active {
+    background-color: rgba(0, 0, 0, 0.038);
+    color: black;
+}
 #botao{
-    padding: 15px 50px;
-    margin-left: 10px;
-    font-size: 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    color: white;
-    background-color: rgba(251, 151, 170, 1);
-    border: transparent 4px solid
+    padding: 13px 47px;
+    background-color: rgba(123, 58, 61, 0.613);
+    border: none;
+    border-radius: 19px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight:700;
+  font-family: 'Courier New', Courier, monospace;
 }
 li{
     list-style: none;
-}
-#botao:hover{
-    background-color: rgb(241, 131, 152);
-    cursor: pointer;
 }
 .linha{
     margin: 0;
