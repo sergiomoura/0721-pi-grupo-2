@@ -9,7 +9,8 @@ const paginasController = {
         res.render('listagemProduto.ejs')
     },
     showProdutoInterno:(req,res)=>{
-        res.render('produtoInterno.ejs')
+        res.render('produtoInterno.ejs');
+        
     },
     showCarrinho:(req, res)=>{
         res.render('carrinho.ejs')

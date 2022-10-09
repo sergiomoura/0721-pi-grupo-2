@@ -118,8 +118,6 @@ main{
     padding-left: 70px;
     width: fit-content;
 }
-
-
 #preco_tabela{
     grid-area: preco_tabela;
     margin-right: 10px;
@@ -192,3 +190,42 @@ li{
     margin:0;
     padding-top: 40px;
 }
+footer{
+    margin-top: 100px;
+    background-image: url('../img/Rectangle\ 64\ \(1\).png');
+    width: 100%;
+    height: 164px;
+    background-color: rgba(237, 160, 160, 0.866);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    font-weight: 500;
+}
+footer>article{
+    
+}
+footer>article>ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0%;
+}
+#categorias>li>a{
+    color: black;
+}
+#contato{
+    align-self: center;
+}
+#sobre{
+    align-items:center ;
+}
+#robos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#robos>p>a>img{
+    height: 70px;
+    gap: 20px;
+    border: 1px solid rgb(189, 128, 36);
+}
+
