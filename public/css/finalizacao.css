@@ -1,7 +1,8 @@
 body {
     margin: 0%;
-    background: repeating-linear-gradient(rgb(248, 245, 245rgba(0, 0, 0, 0.542)4));
+    /* background: repeating-linear-gradient(rgba(248, 245, 245 rgba(252, 197, 197, 0.918)4)); */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(252, 197, 197, 0.918);
 }
 
 header>#conteiner_cabecalho {
@@ -93,11 +94,8 @@ main {
     height: 600px;
     width: 49%;
     justify-content: center;
-    background-color: rgba(238, 236, 236, 0);
-    border: 1px solid rgba(231, 248, 161, 0.429);
  
 }
-
 
 .content{
     height:500px ;
@@ -162,6 +160,8 @@ main {
 #slide5:checked ~ .s1{
     margin-left:-80%;
 }
+
+
 /*Textos*/
 #textos{
     color: rgba(251, 151, 170, 1);
@@ -183,7 +183,7 @@ h2{
 }  */
 
 footer{
-    background-color: antiquewhite;
+    background-color: rgba(252, 197, 197, 0.918);
     margin-top: 50px;
     padding: 30px 50px;
     display: flex;
@@ -191,18 +191,19 @@ footer{
 }
 
 footer h3{
-    color: rgba(251, 151, 170, 1);
+    color: rgb(255, 125, 149);
     margin-top: 60px;
 }
+
 #contato {
-width: 100%;
+width: 180px;
 }
 
  footer img{
     grid-area: contato;
     padding-left: 800px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     color:  rgb(255, 255, 255);
 }
 

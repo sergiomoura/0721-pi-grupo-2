@@ -19,7 +19,12 @@ const paginasController = {
     },
     showPainel:(req, res)=>{
         res.render('painelDeUsuario.ejs')
+    },
+
+    mostraCategoria:(req,res)=>{
+        let id = req.params.id;
     }
+
 }
 
 module.exports = paginasController;
