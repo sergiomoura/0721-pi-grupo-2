@@ -17,4 +17,4 @@ app.set('view engine', 'ejs');
 app.use('/', homeRouter);
 //
 //  fazer o servidor rodar na porta 3000
-app.listen(3000);
+app.listen(8000);
