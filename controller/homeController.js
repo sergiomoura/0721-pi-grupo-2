@@ -22,9 +22,9 @@ const paginasController = {
         res.render('painelDeUsuario.ejs')
     },
 
-    mostraCategoria:(req,res)=>{
-        let id = req.params.id;
-    }
+    // mostraCategoria:(req,res)=>{
+    //     let id = req.params.id;
+    // }
 
 }
 
