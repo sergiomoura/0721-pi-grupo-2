@@ -5,46 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/css/finalizacao.css">
-    <link rel="icon" href="/public/img/—Pngtree—pink magnifying glass classification table_4536491.png">
-    <title>Langglow</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+    </style>
+    <link rel="stylesheet" href="css/finalizacao.css">
+    <!-- <link rel="icon" href="/img/—Pngtree—pink magnifying glass classification table_4536491.png"> -->
+    <title>Finalização</title>
 </head>
 
-<body id="conteiner">
+<body>
     <header>
-        <div>
-            <img id="logo" src="../public/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png"
-                alt="Logo LanggGlow">
-        </div>
+        <section id="conteiner_cabecalho">
+            <div>
+                <img id="logo" src="img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png"
+                    alt="Logo LanggGlow">
+            </div>
             <ul id="conteiner_informacoes">
-                <li class="informacoes_contato">
-                    <a href='#'> <img src="../public/img/perfil_do_usario.png" alt="icone de pesquisa"></a>
+                <li>
+                    <a href='#'> <img src="img/perfil_do_usario.png" alt="icone de pesquisa"></a>
                 </li>
-                <li class="informacoes_contato">
-                <a href='#'> <img src="../public/img/sacola (2).png" alt="icone de sacola"></a>
-                </li>
-                <li class="informacoes_contato">
-                    <a href='#'> <img src="../public/img/icone_pesquisa.png" alt="icone de pesquisa"></a>
-                </li>
+                <div id="conteiner_pesquisa_sacola">
+                    <p class="pesquisa_sacola">
+                        <a href='#'> <img src="img/icone_pesquisa.png" alt="icone de pesquisa"></a>
+                    </p>
+                    <p class="pesquisa_sacola">
+                        <a href='#'> <img src="img/sacola (2).png" alt="icone de sacola"></a>
+                    </p>
+                </div>
             </ul>
-        </div>
-        <form action="/busca">
-            <input type="search" name="busca" id="busca">
-        </form>
+            </div>
+
+        </section>
+        <section id="conteiner_nav">
+            <nav>
+                <ul>
+                    <li><a href="/">Skincare</a></li>
+                    <li><a href="/">Rosto</a></li>
+                    <li><a href="/">Lábios</a></li>
+                    <li><a href="/">Olhos</a></li>
+                    <li><a href="/">Lançamentos</a></li>
+                    <li><a href="/">Promoções</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <nav id="menu_header">
-        <ul class="menu">
-            <li><a href="#">Sobrancelha</a></li>
-            <li><a href="#">Rosto</a></li>
-            <li><a href="#">Lábios</a></li>
-            <li><a href="#">Olhos</a></li>
-            <li><a href="#">Lancamentos</a></li>
-            <li><a href="#">Promoções</a></li>
-        </ul>
-    </nav>
-    <div id="quadro_compra_realizada">
+    <section id="textos">
         <h2>
             Sua Compra Foi Efetuada Com Sucesso!
             <br>
@@ -53,37 +58,62 @@
         <h1>
             Veja Nossos Outros Produtos Também!
         </h1>
+    </section>
+    <main>
+        <article id="imagens_slide">
+            <section id="imagens">
+                <div class="content">
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide4">
+                        <input type="radio" name="slide" id="slide5">
 
-    </div>
-    <div id="imagens">
-        <div>
-            <main> <!--Ajustar as imagens aqui-->
-                <div class="produto">
-                    <h3>Base</h3>
-                    <img src="/public/img/Base Serum Nude Me.jpg" alt="Base">
-                </div>
-                <div class="produto">
-                    <h3>Batom Gloss</h3>
-                    <img src="/public/img/pinceis.webp" alt="Batom gloss">
-                </div>
-                <div class="produto">
-                    <h3>Paleta de Sombra</h3>
-                    <img src="/public/img/paleta3.jpg" alt="Paleta">
-                </div>
-            </main>
-        </div>
-    </div>
+                        <div class="slide s1">
+                            <img src="img/maquiagem_ajeitada.jpg" alt="maquiagem Ruby Rose Soft Nude">
 
+                        </div>
+                        <div class="slide">
+                            <img src="img/maquiagem_aberta.jpg" alt="maquiagem Ruby Rose Soft Nude">
+                        </div>
+                        <div class="slide">
+                            <img src="img/maquiagem_bonita.jpg" alt="maquiagem Ruby Rose Soft Nude">
+                        </div>
+                        <div class="slide">
+                            <img src="/img/maquiagens.jpg" alt="maquiagem Ruby Rose Soft Nude">
+                        </div>
+                        <div class="slide">
+                            <img src="img/maquiagem_principal1.jpg" alt="maquiagem Ruby Rose Soft Nude">
+
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                        <label class="bar" for="slide5"></label>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+    </main>
     <footer>
-        <div>
-            <p> Precisa de ajuda?<br>
-                Entre em contato com a nossa esquipe
-            </p>
+        Devolopers<br>
+        <div id="robos">
+            <p> <a href="https://github.com/Geovannalessa"><img src="img/robo.png" alt=""></a> </p>
+            <p> <a href="https://github.com/nati3054"><img src="img/robo.png" alt=""></a></p>
+            <p> <a href="https://github.com/Gabs-ag"><img src="img/robo.png" alt=""></a> </p>
+            <p> <a href="https://github.com/AnaCarolll"><img src="img/robo.png" alt=""></a></p>
+            <p> <a href="https://github.com/LalaGomes"><img src="img/robo.png" alt=""></a></p>
         </div>
-        <div class="contato">
-            <img src="/public/img/—Pngtree—white whatsapp icon png_3562063.png" alt="Entre em contato!">
+        <div id="instituicoes">
+            <p><a href="https://www.digitalhouse.com/br?utm_source=google&utm_medium=paidsearch&utm_campaign=lead&utm_term=institucional&utm_content=b2c-institucional-curso-landing-texto-lead-kw-institucional-defrase-keyword-all-other-text-carreer-none-none-all-br-search-none&gclid=CjwKCAjwv4SaBhBPEiwA9YzZvLtGrOFPIsJd0EINPYLAdLXe3FQvaQXmI8uYxo-5HBjkkLFWGUs_gRoCT8oQAvD_BwE"><img src="img/dh.png" alt="curso DH que nos trouxe o ginho menorqtres"></a></p>
+            <p><a href="https://programadoresdoamanha.org"><img src="img/progAmanha.png" alt="o curso que mudou nossas vidas"></a></p>
+            <p><a href="https://github.com/sergiomoura"><img src="img/ginho.png" alt="nosso querido professor"></a></p>
         </div>
-
     </footer>
 </body>
 
