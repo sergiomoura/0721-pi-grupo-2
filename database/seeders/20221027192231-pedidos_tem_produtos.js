@@ -1,25 +1,17 @@
-'use strict';
+const pedidos_tem_produtos=[
 
+]
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+    
+     await queryInterface.bulkInsert('pedidos_tem_produtos',pedidos_tem_produtos, {});
+    
   },
 
   async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+   
+   await queryInterface.bulkDelete('pedidos_tem_produtos', null, {});
+    
   }
 };

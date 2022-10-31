@@ -95,27 +95,22 @@ body {
 
 
 .bloco {
-<<<<<<< HEAD
+
   width: 100%; 
-  height: 120px; 
-=======
+  height: 120px;
   width: 100%;
   height: 120px;
-<<<<<<< HEAD
   background-color:rgba(237, 160, 160, 0.866);
-=======
->>>>>>> cb33d556433b4467ef46cfb95becb2e29793f945
   background-color: rgba(237, 160, 160, 0.866);
->>>>>>> bb6e0773b97ea3af186b7e76b00d99a3f6808810
+
   position: absolute;
   bottom: 25px;
   opacity: 0;
   transition: opacity 400ms linear;
-<<<<<<< HEAD
-=======
+
   border-bottom-right-radius: 14px;
   border-bottom-left-radius: 14px;
->>>>>>> bb6e0773b97ea3af186b7e76b00d99a3f6808810
+
 }
 
 .produto:hover .bloco {

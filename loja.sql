@@ -30,6 +30,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `langglow`.`produtos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(60) NOT NULL,
+  `img` VARCHAR(60) NOT NULL,
   `categorias_id` INT NOT NULL,
   `preco` DECIMAL(6,2) NOT NULL,
   PRIMARY KEY (`id`),
