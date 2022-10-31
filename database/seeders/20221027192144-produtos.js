@@ -1,7 +1,7 @@
 
 const produtos=[
   {  id:1,
-    nome:'rimel transparente.jpg',
+    nome:'rimel transparente',
     categorias_id:1,
     preco:2.50,
     img:'rimel.jpg'
