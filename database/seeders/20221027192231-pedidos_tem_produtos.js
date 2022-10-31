@@ -1,5 +1,7 @@
 const pedidos_tem_produtos=[
+{
 
+},
 ]
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
