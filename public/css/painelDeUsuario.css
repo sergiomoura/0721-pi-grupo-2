@@ -97,7 +97,7 @@ input{
    height: 60px; 
    background-color: aqua;
    align-items: center;
-  
+    
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -107,5 +107,6 @@ tr{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #FC8FA4;
 }
  
