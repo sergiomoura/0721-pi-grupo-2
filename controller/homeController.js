@@ -18,9 +18,20 @@ const paginasController = {
     showFinalizacao:(req, res)=>{
         res.render('finalizacao.ejs')
     },
-    showPainel:(req, res)=>{
+<<<<<<< HEAD
+    showPainelDeUsuario:(req, res)=>{
         res.render('painelDeUsuario.ejs')
     }
+=======
+    showPainel:(req, res)=>{
+        res.render('painelDeUsuario.ejs')
+    },
+
+    // mostraCategoria:(req,res)=>{
+    //     let id = req.params.id;
+    // }
+
+>>>>>>> dc436ee6c632e848709fdef7efb045456febea89
 }
 
 module.exports = paginasController;

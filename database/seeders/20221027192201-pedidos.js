@@ -4,7 +4,7 @@ const pedidos=[{
   //status:,
   clientes_id:3,
   valor_total:120.00,
-  endereco_entrega:'na casa da fulana '
+  endereco_entrega:'na casa da fulana'
 },
 ]
 /** @type {import('sequelize-cli').Migration} */
