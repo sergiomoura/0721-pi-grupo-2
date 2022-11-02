@@ -1,3 +1,4 @@
+const {sequelize} = require('../database/models');
 const paginasController = {
     showLogin:(req,res)=>{
         res.render('login.ejs')
