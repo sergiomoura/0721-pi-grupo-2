@@ -10,7 +10,6 @@ app.use(express.static(path.join(__dirname, 'public')));
   app.set('view engine', 'ejs');  
   //  Fazer com que ele use o homeRouter 
   app.use('/', homeRouter); 
-
   // //  fazer o servidor rodar na porta 3000
    app.listen(8000);
 

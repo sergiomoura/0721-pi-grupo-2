@@ -3,8 +3,10 @@ const paginasController = {
     showLogin:(req,res)=>{
         res.render('login.ejs')
     },
-    showHome:(req, res)=>{
-        res.render('home.ejs')
+    showHome: async (req,res) => {
+        let sql = `SELECT * FROM produtos`;
+        let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
+        return res.render('home.ejs',{produtos});
     },
     showListagem:(req,res)=>{
         res.render('listagemProduto.ejs')

@@ -48,27 +48,24 @@
    </header>
 
    <main class="container">
-      <!-- <div class="produto">
-         <img class="base" src="img/paleta azul.png" alt="">
-         <p class="produto-nome">Base Promoções</p>
-         <p class="produto-preco">R$40,00</p>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img class="batom" src="img/batom gloss.jpg" alt="">
-         <p class="produto-nome">Base Promoções</p>
-         <p class="produto-preco">R$40,00</p>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img class="base" src="img/base.jpg" alt="">
-         <p class="produto-nome">Base Promoções</p>
-         <p class="produto-preco">R$40,00</p>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div> -->
+
+      <% for(let p of produtos){ %>
+         <div class="produto">
+                 <img src="img/<%= p.imagem%>" alt="<%= p.nome%>">
+                 <div class="bloco">
+                  <p class="produto-nome"> <%= p.nome%> </p>
+                  <p class="produto-preco">R$ <%= p.preco%></p>
+                 </div>
+                 <button class="favoritar">Favoritar</button>
+                 <button class="add-carrinho">Add carrinho</button>
+
+                 <!-- <form class="carro" action="/carrinho" method="post">
+                     <input type="hidden" name="id" value="<%= p.id %>">
+                     <button type="submit">+Add</button>
+                 </form> -->
+         </div>
+     <% } %>
+
       <div class="produto">
          <img src="img/Base Serum Nude Me.jpg" alt="">
          <div class="bloco">
@@ -150,36 +147,7 @@
          <button class="favoritar">Favoritar</button>
          <button class="add-carrinho">Add carrinho</button>
       </div>
-      <!-- <div class="produto">
-         <img class="Brush" src="img/Brush Sets.jpg" alt="">
-         <div class="bloco1">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$40,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img class="pincel" src="img/pinceis.webp" alt="">
-         <p class="produto-nome">Base Promoções</p>
-         <p class="produto-preco">R$40,00</p>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img class="Rectangle" src="img/Rectangle 66.png" alt="">
-         <p class="produto-nome">Base Promoções</p>
-         <p class="produto-preco">R$40,00</p>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img class="rimel" src="img/rimel trasparente.jpg" alt="">
-         <p class="produto-nome">Base Promoções</p>
-         <p class="produto-preco">R$40,00</p>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div> -->
+
    </main>
    <section id="pre-footer">
       <article id="categorias">
@@ -202,8 +170,7 @@
                   Central SAC: (00) 0000-0000
               </li>
               <li>
-                  Email:
-faleconosco@langglow.com
+                  Email: faleconosco@langglow.com
               </li>
       </article>
   </section>
