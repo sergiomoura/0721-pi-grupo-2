@@ -4,11 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <link rel="stylesheet" href="home.css">
-
    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="/css/home.css">
    <link rel="stylesheet" href="/css/home.css">
    <title>Home</title>
 </head>
@@ -57,8 +53,12 @@
                   <p class="produto-preco">R$ <%= p.preco%></p>
                  </div>
                  <button class="favoritar">Favoritar</button>
-                 <button class="add-carrinho">Add carrinho</button>
 
+                 <!-- o metodo pode ser get? -->
+
+                 <form action="/produto" method="get">  
+                 <button class="add-carrinho" type="submit">Adicionar</button>
+                  </form>
                  <!-- <form class="carro" action="/carrinho" method="post">
                      <input type="hidden" name="id" value="<%= p.id %>">
                      <button type="submit">+Add</button>
