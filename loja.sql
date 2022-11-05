@@ -11,6 +11,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema langglow
 -- -----------------------------------------------------
+drop DATABASE EXISTS `langglow`;
 CREATE SCHEMA IF NOT EXISTS `langglow` DEFAULT CHARACTER SET utf8 ;
 USE `langglow` ;
 
@@ -33,6 +34,10 @@ CREATE TABLE IF NOT EXISTS `langglow`.`produtos` (
   `img` VARCHAR(60) NOT NULL,
   `categorias_id` INT NOT NULL,
   `preco` DECIMAL(6,2) NOT NULL,
+  `descricao` VARCHAR(1000) NOT NULL,
+  `detalhes` VARCHAR(1000) NOT NULL,
+  `composicao` VARCHAR(1000) NOT NULL,
+  `precausao` VARCHAR(1000) NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_produtos_categorias_idx` (`categorias_id` ASC),
   CONSTRAINT `fk_produtos_categorias`

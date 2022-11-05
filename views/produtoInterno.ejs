@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/produtoInterno.css">
+    <link rel="stylesheet" href="/css/produtoInterno.css">
     <title>Produto Interno</title>
 </head>
 
@@ -57,18 +57,16 @@
                         
 
                         <div class="slide s1">
-                            <img src="img/maquiagem_bonita.jpg" alt="maquiagem Ruby Rose Soft Nude">
-                            
+                            <img src="img/<%= produto.img %>" alt="<%= produto.nome%>">;
                         </div>
                         <div class="slide">
-                            <img src="img/maquiagem_aberta.jpg" alt="maquiagem Ruby Rose Soft Nude">
+                            <img src="img/<%= produto.img %>" alt="<%= produto.nome%>">;
                         </div>
                         <div class="slide">
-                            <img src="img/maqAberta.png" alt="maquiagem Ruby Rose Soft Nude">
-
+                            <img src="img/<%= produto.img %>" alt="<%= produto.nome%>">;
                         </div>
                         <div class="slide">
-                            <img src="/img/maqFrente.png" alt="maquiagem Ruby Rose Soft Nude">
+                            <img src="img/<%= produto.img %>" alt="<%= produto.nome%>">;
                         </div>
                        
                     </div>
@@ -77,24 +75,17 @@
                         <label class="bar" for="slide2"></label>
                         <label class="bar" for="slide3"></label>
                         <label class="bar" for="slide4"></label>
-                        
                     </div>
                 </div>
             </section>
+            
             <section id="descricao">
-                <h2>Paleta Soft Nude Feels - Hb1045 - Rubyrose</h2>
-                <p>
-                    Paleta De Sombras Nude
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta quam non error ducimus provident dolores quo eligendi hic deleniti id quis numquam corrupti
-                    rem natus sint veritatis laboriosam, incidunt sapiente.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum unde similique veritatis in. Non
-                    minima aperiam maiores doloremque, natus praesentium?
-                    Deserunt reiciendis nemo nesciunt dolor ad fugiat commodi ducimus vero.
-                </p>
+            
+                <h2><%=produto.nome%></h2>
+                <p> <%= produto.descricao%> </p>
                 <ul id="preco">
                     <li id="preco_alto">
-                        R$ 49,99
+                        <%= produto.preco%>
                     </li>
                     <li>
                         6x De R$8,33
@@ -103,13 +94,13 @@
                 <table summary="Tabela de quantidade de produto">
                     <thead>
                         <tr>
-                            <th id="quantidade" colspan="3" align="start"> Quantidade</th>
+                            <th id="quantidade" colspan="3" align="start">Quantidade</th>
                         </tr>
                     </thead>
                     <tbody id="inf_produto">
                         <tr>
-                            <td class="inf">Paleta Soft Nude Feels - Hb1045 - Rubyrose</td>
-                            <td class="inf">R$ 49,99</td>
+                            <td class="inf"><%= produto.nome%></td>
+                            <td class="inf">R$ <%= produto.preco%></td>
                             <td class="inf" align="center">
                                 <button id="Menos" class="mais_e_menos">-</button>
                                 <input type="text" name="inputQtd" id="qtd" value="1">
@@ -119,11 +110,14 @@
                     </tbody>
                     <tfoot>
                         <tr align="center">
-                            <td id="botao_carrinho" colspan="3"> <button> Adicionar Ao Carrinho</button></td>
+                            <form action="/carrinho">
+                                <td id="botao_carrinho" colspan="3"><button>Adicionar Ao Carrinho</button></td>
+                            </form>
                         </tr>
                     </tfoot>
                 </table>
             </section>
+            
         </article>
         <article id="detalhamento">
             <article id="titulos_detalhamento">
@@ -230,7 +224,6 @@
                     alert("A quantidade máxima do produto é 99 unidades");
                     qtd.value = 1;
                 }
-                
             }
         }
         function adicionarQtd() {
@@ -247,7 +240,7 @@
         function mudarDetalhes(){
             detalhes.classList.add("destaques");
             // detalhes.classList.toggle("destaques"); interruptor liga e desliga
-            textoDet.innerHTML = '<p> Paleta de sombras Soft Nude tem 17 sombras, e 1 primer para olhos, sendo 10 opacas (Strip, Flirt,Private, Perform,Young Love, Dark Matter, Nap, Diva, Rubin E In love), 2 glitters prensados (Glamory e Wow) 5 e cintilantes (Wish, Dream, Fantasy e Chic), com tons rosados e nude maravilhosos, são infinitas possibilidades de make! Sua pigmentação é incrível e a textura da sombra é super aveludada e macia. <br> Referência: HB-1045<br> Peso: 0,8g cada<br> Dimensões: A 10 x L 17 x C 1 </p>'
+            textoDet.innerHTML = '<p> <%= produto.detalhes %> </p>'
             composicao.classList.remove("destaques")
             precaucao.classList.remove("destaques")
 
@@ -255,23 +248,20 @@
                
                 console.log("funciona?")
             }
-            // se os o clique dos detalhes for diferente detalhes remova (nao funciona)
-            //
 
         }
         function mudarComposicao(){
             composicao.classList.add("destaques");
             detalhes.classList.remove("destaques")
             precaucao.classList.remove("destaques")
-            textoDet.innerHTML = '<p> 10 Sombras matte: <br> COMPOSIÇÃO: Talc, mica, dimethicone, sílica, methicone, magnesium stearate, petrolatum, polyethylene, paraffinum liquidum, petrolatum, isopropyl, polyisobutene, ethylhexyl palmitate, octyldodecanol, phenoxythanol, ethylhexyglycerin, parfum, benzyl, benzoate, hexamethylindanopyran, linalool, d-limonene, ethyl linalool, acetylcedrene, dipropylene glycol, linalyl acetate, cedrol methyl ether, methyldihydrojasmonate, tetramethyl acetyloctahdronaphathalenes Pode conter: mica tin oxide, ci 77891, ci 75470, ci 77289, ci 77491, ci 77499, ci 77492, ci 16035, ci 77742, ci 19140, ci 42090, ci 77510.  <br>5 Sombras metálicas: <br> COMPOSIÇÃO:Talc, dimethicone, mica, ethylene/proplene / styrene copolymer, paraffinum liquidum, petrolatum, isopropyl myristate, polyisobutene, caprylic /capric triglyceride, phenoxyethanol, parafum, benzyl, benzoate, hexamethylindanopyran, linalool, d-limonene, ethyl linalool, acetylcedrene, dipropylene glycol, linalya acetate, cedrol methyl ether, methyldihydrojasmonate, tetramethyl acetyloctahydronaphthalenes, ethylhexyglycerin. Pode conter: mica. Tin oxide, ci 77891, ci 77491, ci 75470, ci 77510, ci 77499, ci 77163, ci 16035, ci 42090, ci 77007, ci 77742, ci 77429, ci 19140, ci 77289 .<br> 2 Glitter Cream: <br>COMPOSIÇÃO: Mineral oil, helianthus annuus (sunflower) seed wax, cyclopentasiloxane, trimethylsiloxysilicate, ethylene, propylene, styrene copolymer, phenoxyethanol, ethylhexylglycerin, polyethylene terephthalate, polyurethane-11. Pode conter: CI 77000, CI 19140, CI 16035, CI 77510, CI 77492, CI 77288, CI 77499 <br>1 Primer para sombras: <br> COMPOSIÇÃO: Caprylic / capric triclyceride, hydrolyzed theobroma cacao seed butter, sílica, isononyl isononanoate, ceresin, talc, beeswax, isopropyl myristate, diglyceryl adipate / caprate / caprylate / hydroxystearate / isostearate / stearate, hydronxystearic acid, parfum, benzil benzoate, linalool Pode conter: ci 77891, ci 77492, ci 77491, ci 77499. </p>'
+            textoDet.innerHTML = '<p> <%= produto.composicao %> </p>'
         }
         function mudarPrecaucao(){
             precaucao.classList.add("destaques");
             composicao.classList.remove("destaques")
             detalhes.classList.remove("destaques")
-            textoDet.innerHTML = '<p> Precauções: <br> - Uso externo.<br> - Não aplique sobre a pele irritada ou lesionada.<br> - Se houver qualquer sinal de irritação, descontinue o uso do produto.<br> - Mantenha sempre bem fechado, longe da luz e calor e do alcance de crianças.<br> * Não testado em animais.<br> * Produto novo e original.</p>'
+            textoDet.innerHTML = '<p> <%= produto.precaucao %> </p>'
         }
     </script>
 </body>
-
 </html>

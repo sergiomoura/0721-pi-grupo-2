@@ -11,9 +11,12 @@ const paginasController = {
     showListagem:(req,res)=>{
         res.render('listagemProduto.ejs')
     },
-    showProdutoInterno:(req,res)=>{
-        res.render('produtoInterno.ejs');
-        
+    showProdutoInterno: async (req,res)=>{
+        let id = req.params.id;
+        let sql = `SELECT * FROM produtos WHERE id = ${id}`;
+        let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
+        let produto = produtos[0];
+        res.render('produtoInterno.ejs',{produto});
     },
     showCarrinho:(req, res)=>{
         res.render('carrinho.ejs')

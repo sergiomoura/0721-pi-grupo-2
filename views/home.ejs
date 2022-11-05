@@ -4,11 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <link rel="stylesheet" href="home.css">
-
    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="/css/home.css">
    <link rel="stylesheet" href="/css/home.css">
    <title>Home</title>
 </head>
@@ -16,7 +12,7 @@
    <header>
       <section id="conteiner_cabecalho">
          <div>
-            <img id="logo" src="img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png" alt="Logo LanggGlow">
+            <img id="logo" src="/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png" alt="Logo LanggGlow">
          </div>
          <ul id="conteiner_informacoes">
             <li>
@@ -57,8 +53,11 @@
                   <p class="produto-preco">R$ <%= p.preco%></p>
                  </div>
                  <button class="favoritar">Favoritar</button>
-                 <button class="add-carrinho">Add carrinho</button>
 
+                 <!-- o metodo pode ser get? -->
+
+                  <a href="/produto/<%= p.id%>"> Detalhes </a>
+                 
                  <!-- <form class="carro" action="/carrinho" method="post">
                      <input type="hidden" name="id" value="<%= p.id %>">
                      <button type="submit">+Add</button>
