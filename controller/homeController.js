@@ -24,6 +24,9 @@ const paginasController = {
     showPainel:(req, res)=>{
         res.render('painelDeUsuario.ejs')
     },
+    showCadastro:(req,res)=>{
+        res.render('cadastro.ejs')
+    }
 
     // mostraCategoria:(req,res)=>{
     //     let id = req.params.id;

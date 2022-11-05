@@ -1,0 +1,172 @@
+body {
+    width: 50%;
+    margin: auto;
+    background-color: #000000f5;
+    font-family: 'Lusitana', serif;
+  }
+  main{
+    background-size:cover;
+    background-image: url(../img/maquiagem.jpeg);
+  }
+  img {
+    block-size: 100%;
+    padding-top: 1%;
+  }
+  .container {
+    background-color: rgba(53, 4, 4, 0.386);
+    padding: 100px;
+    margin: auto;
+    border: 6px rgb(255, 255, 255) double ;
+    height: 650px;
+  }
+  header {
+    background-color: #ffffff90;
+    height: 150px;
+    box-shadow: 1px 1px 4px black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  article {
+    display: flex;
+    align-items: center;
+    border: solid rgba(255, 255, 255, 0.27) 1px;
+    padding: 70px 0px;
+    background-color: #f0e2e42a;
+    flex-direction: column;
+    
+  }
+  article>#titulo{
+    font-size: 36px;
+    color: white;
+    letter-spacing: 10px;
+    margin-top: 2px;
+  }
+  form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  #info>.classe{
+    display:flex;
+    flex-direction: column;
+    color: #ffeff2;
+    font-size: 20px;
+    margin-bottom:12px
+    
+  }
+ 
+  .classe>input{
+    font-size: 16px;
+    padding: 3%;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px black;
+    border: #ffeff2;
+    margin: 0%;
+  }
+  
+  .classe>input:focus{
+    background-color: #ffeff2;
+    outline: 0;
+  }
+  
+  .esqueci_cadastrar{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  form>input{
+    background-color: blueviolet;
+  }
+  
+  .esqueci_cadastrar>p{
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .esqueci_cadastrar>p>a {
+    color: #ffeff2;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .esqueci_cadastrar>p>a:hover{
+    text-decoration: underline;
+  }
+  
+  form>#entrar{
+    align-items: center;
+    background-color: #ffffff1c;
+    color: rgb(90, 85, 85);
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #e2d5d5b5;
+    font-size: medium;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 6px;
+    
+  }
+  form>#entrar:focus{
+    background-color: #ffffff1c;
+    color: black;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media(max-width:480px){
+    main{
+        width: 330px;
+    }
+   
+  }
+  /* Para tabletes, ipads */
+  /* @media(min-width:481px) and (max-width:767px){
+    body{
+      background-color: rgb(215, 63, 63);
+      width: 90%;
+      height: auto;
+  }
+  .classe {
+    margin: 10%;
+    position: relative;
+    width: 100%;
+    right: 20%;
+  }
+  .container2 {
+    
+    border: solid rgba(255, 255, 255, 0.27) 1px;
+    padding: 20px 0;
+    margin:auto;
+    
+    position: relative;
+    background-color: #ffeff21c;
+  }
+  form input {
+    width: 100%;
+    
+  } */
+  
+  
+  /* Para laptos e desktops */
+  @media(min-width:768px) and (max-width:1280px){
+    body{
+      background-color: rgb(160, 145, 145);
+      
+    }
+    
+  }
+  /* Para telas grandes */
+  @media(min-width:1281px){
+    
+  }

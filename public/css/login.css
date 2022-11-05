@@ -104,6 +104,7 @@ form>#entrar{
   font-weight: 700;
   font-family: 'Courier New', Courier, monospace;
   border: none;
+  border-radius: 6px;
   
 }
 form>#entrar:focus{
