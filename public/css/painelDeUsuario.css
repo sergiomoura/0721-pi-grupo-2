@@ -7,7 +7,7 @@ body{
 }
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 .img{
     width: 110px;
@@ -87,7 +87,7 @@ input{
 
 
 };
-.tabela{
+/* .tabela{
     background-color: red;
     
     
@@ -109,4 +109,4 @@ tr{
     justify-content: space-between;
     background-color: #FC8FA4;
 }
- 
+  */
