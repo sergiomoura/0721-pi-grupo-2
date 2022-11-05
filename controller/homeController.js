@@ -18,8 +18,27 @@ const paginasController = {
         let produto = produtos[0];
         res.render('produtoInterno.ejs',{produto});
     },
-    showCarrinho:(req, res)=>{
-        res.render('carrinho.ejs')
+    adicionarCarrinho: async (req, res)=>{
+        let {id,inputQtd} = req.body;
+
+        let sql = `SELECT * FROM produtos WHERE id = ${id}`;
+        let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
+        let produto = produtos[0];
+        produto.qtd = inputQtd; 
+        console.log(produto);
+        if (req.session.carrinho) {
+            req.session.carrinho.push(produto);
+        } else {
+            req.session.carrinho = [produto];
+        }
+        res.redirect('/carrinho');
+    },
+    showCarrinho: async (req, res)=>{
+        // let sql = `SELECT * FROM produtos`;
+        // let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
+        // let produto = req.session.carrinho;
+        // res.send(req.session.carrinho);
+        return res.render('carrinho.ejs',{produto:req.session.carrinho});
     },
     showFinalizacao:(req, res)=>{
         res.render('finalizacao.ejs')

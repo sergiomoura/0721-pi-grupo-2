@@ -36,6 +36,9 @@
             <h1>
                 Carrinho de compras
             </h1>
+
+
+            <% for(let p of produto){%>
             <div id="quadro_tabela">
                 <table>
                     <thead>
@@ -49,22 +52,22 @@
                     </thead>
                     <tbody>
                         <tr align="center" id="primeiraLinha">
-                            <td><img src="./img/Rectangle 66.png" alt="maquiagem"></td>
-                            <td>Paleta Soft Nude Feels - Hb1045 -Rubyrose</td>
-                            <td>1</td>
-                            <td>   R$ 49,99</td>
+                            <td><img src="./img/<%= p.img%>" alt="<%= p.nome%>"></td>
+                            <td> <%= p.nome%> </td>
+                            <td> <%= p.qtd%></td>
+                            <td>  R$<%= p.preco%></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Quantidade Total De Itens</td>
-                            <td align="center"> <strong> 1</strong> </td>
+                            <td align="center"> <strong> <%= produto.qtd%> </strong> </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Subtotal</td>
-                            <td align="center"> <strong>R$ 49,99 </strong> </td>
+                            <td align="center"> <strong>R$<%= p.preco%> </strong> </td>
                         </tr>
                         <tr id="espaco">
                             <td></td>
@@ -78,7 +81,7 @@
                         <tr align="center">
                             <td></td>
                             <td></td>
-                            <td colspan="2" id="total">Total R$ 49,99</td>
+                            <td colspan="2" id="total">Total <%= p.preco%> </td>
                         </tr>
                         <tr id="espaco2">
                             <td ></td>
@@ -90,6 +93,7 @@
                     </tfoot>
                 </table>
             </div>
+        <%}%>
         </div>
         <section id="pre-footer">
             <article id="categorias">

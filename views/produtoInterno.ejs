@@ -13,12 +13,12 @@
     <header>
         <section id="conteiner_cabecalho">
             <div>
-                <img id="logo" src="img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png"
+                <img id="logo" src="/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png"
                     alt="Logo LanggGlow">
             </div>
             <ul id="conteiner_informacoes">
                 <li>
-                    <a href='#'> <img src="img/perfil_do_usario.png" alt="icone de pesquisa"></a>
+                    <a href='#'> <img src="img/perfil_do_usario.png" alt="icone do usuario"></a>
                 </li>
                 <div id="conteiner_pesquisa_sacola">
                     <p class="pesquisa_sacola">
@@ -30,7 +30,6 @@
                 </div>
             </ul>
             </div>
-
         </section>
         <section id="conteiner_nav">
             <nav>
@@ -54,7 +53,7 @@
                         <input type="radio" name="slide" id="slide2">
                         <input type="radio" name="slide" id="slide3">
                         <input type="radio" name="slide" id="slide4">
-                        
+
 
                         <div class="slide s1">
                             <img src="img/<%= produto.img %>" alt="<%= produto.nome%>">;
@@ -68,7 +67,7 @@
                         <div class="slide">
                             <img src="img/<%= produto.img %>" alt="<%= produto.nome%>">;
                         </div>
-                       
+
                     </div>
                     <div class="navigation">
                         <label class="bar" for="slide1"></label>
@@ -78,11 +77,15 @@
                     </div>
                 </div>
             </section>
-            
+
             <section id="descricao">
-            
-                <h2><%=produto.nome%></h2>
-                <p> <%= produto.descricao%> </p>
+
+                <h2>
+                    <%=produto.nome%>
+                </h2>
+                <p>
+                    <%= produto.descricao%>
+                </p>
                 <ul id="preco">
                     <li id="preco_alto">
                         <%= produto.preco%>
@@ -91,33 +94,40 @@
                         6x De R$8,33
                     </li>
                 </ul>
-                <table summary="Tabela de quantidade de produto">
-                    <thead>
-                        <tr>
-                            <th id="quantidade" colspan="3" align="start">Quantidade</th>
-                        </tr>
-                    </thead>
-                    <tbody id="inf_produto">
-                        <tr>
-                            <td class="inf"><%= produto.nome%></td>
-                            <td class="inf">R$ <%= produto.preco%></td>
-                            <td class="inf" align="center">
-                                <button id="Menos" class="mais_e_menos">-</button>
-                                <input type="text" name="inputQtd" id="qtd" value="1">
-                                <button id="Mais" class="mais_e_menos">+</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr align="center">
-                            <form action="/carrinho">
-                                <td id="botao_carrinho" colspan="3"><button>Adicionar Ao Carrinho</button></td>
-                            </form>
-                        </tr>
-                    </tfoot>
-                </table>
+
+                <form action="/carrinho" method="post">
+                    <table summary="Tabela de quantidade de produto">
+                        <thead>
+                            <tr>
+                                <th id="quantidade" colspan="3" align="start">Quantidade</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inf_produto">
+                            <tr>
+                                <td class="inf">
+                                    <%= produto.nome%>
+                                </td>
+                                <td class="inf">R$ <%= produto.preco%>
+                                </td>
+                                <td class="inf" align="center">
+                                    <button type="button" id="Menos" class="mais_e_menos">-</button>
+                                    <input type="text" name="inputQtd" id="qtd" value="1">
+                                    <button type="button"  id="Mais" class="mais_e_menos">+</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr align="center">
+
+                                <input type="hidden" name="id" id="id" value="<%= produto.id%>">
+                                <td id="botao_carrinho" colspan="3"><button type="submit">Adicionar Ao Carrinho</button></td>
+
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
             </section>
-            
+
         </article>
         <article id="detalhamento">
             <article id="titulos_detalhamento">
@@ -140,9 +150,9 @@
                     Peso: 0,8g cada<br>
                     Dimensões: A 10 x L 17 x C 1
                 </p>
-               
+
             </section>
-            
+
         </article>
         <section id="pre-footer">
             <article id="categorias">
@@ -180,8 +190,11 @@
             <p> <a href="https://github.com/LalaGomes"><img src="img/robo.png" alt=""></a></p>
         </div>
         <div id="instituicoes">
-            <p><a href="https://www.digitalhouse.com/br?utm_source=google&utm_medium=paidsearch&utm_campaign=lead&utm_term=institucional&utm_content=b2c-institucional-curso-landing-texto-lead-kw-institucional-defrase-keyword-all-other-text-carreer-none-none-all-br-search-none&gclid=CjwKCAjwv4SaBhBPEiwA9YzZvLtGrOFPIsJd0EINPYLAdLXe3FQvaQXmI8uYxo-5HBjkkLFWGUs_gRoCT8oQAvD_BwE"><img src="img/dh.png" alt="curso DH que nos trouxe o ginho menorqtres"></a></p>
-            <p><a href="https://programadoresdoamanha.org"><img src="img/progAmanha.png" alt="o curso que mudou nossas vidas"></a></p>
+            <p><a
+                    href="https://www.digitalhouse.com/br?utm_source=google&utm_medium=paidsearch&utm_campaign=lead&utm_term=institucional&utm_content=b2c-institucional-curso-landing-texto-lead-kw-institucional-defrase-keyword-all-other-text-carreer-none-none-all-br-search-none&gclid=CjwKCAjwv4SaBhBPEiwA9YzZvLtGrOFPIsJd0EINPYLAdLXe3FQvaQXmI8uYxo-5HBjkkLFWGUs_gRoCT8oQAvD_BwE"><img
+                        src="img/dh.png" alt="curso DH que nos trouxe o ginho menorqtres"></a></p>
+            <p><a href="https://programadoresdoamanha.org"><img src="img/progAmanha.png"
+                        alt="o curso que mudou nossas vidas"></a></p>
             <p><a href="https://github.com/sergiomoura"><img src="img/ginho.png" alt="nosso querido professor"></a></p>
         </div>
     </footer>
@@ -191,7 +204,7 @@
         let qtd = document.getElementById("qtd");
         let textoDet = document.getElementById("texto_detalhamento");
         let detalhes = document.getElementById("detalhes");
-        let composicao= document.getElementById("composicao");
+        let composicao = document.getElementById("composicao");
         let precaucao = document.getElementById("precaucao");
 
         menos.addEventListener("click", diminuirQtd);
@@ -208,9 +221,9 @@
                 menos.setAttribute('disabled', '');
             }
             mais.removeAttribute('disabled');
-            if (total < 10){
-                    qtd.style.width = "13px";
-                    
+            if (total < 10) {
+                qtd.style.width = "13px";
+
             }
         }
         function input(e) {
@@ -233,30 +246,30 @@
             if (total == 99) {
                 mais.setAttribute('disabled', '');
             }
-            if (total > 9){
-                    qtd.style.width = "16px";
+            if (total > 9) {
+                qtd.style.width = "16px";
             }
         }
-        function mudarDetalhes(){
+        function mudarDetalhes() {
             detalhes.classList.add("destaques");
             // detalhes.classList.toggle("destaques"); interruptor liga e desliga
             textoDet.innerHTML = '<p> <%= produto.detalhes %> </p>'
             composicao.classList.remove("destaques")
             precaucao.classList.remove("destaques")
 
-            if(detalhes != detalhes){
-               
+            if (detalhes != detalhes) {
+
                 console.log("funciona?")
             }
 
         }
-        function mudarComposicao(){
+        function mudarComposicao() {
             composicao.classList.add("destaques");
             detalhes.classList.remove("destaques")
             precaucao.classList.remove("destaques")
             textoDet.innerHTML = '<p> <%= produto.composicao %> </p>'
         }
-        function mudarPrecaucao(){
+        function mudarPrecaucao() {
             precaucao.classList.add("destaques");
             composicao.classList.remove("destaques")
             detalhes.classList.remove("destaques")
@@ -264,4 +277,5 @@
         }
     </script>
 </body>
+
 </html>
