@@ -37,8 +37,7 @@
                 Carrinho de compras
             </h1>
 
-
-            <% for(let p of produto){%>
+            
             <div id="quadro_tabela">
                 <table>
                     <thead>
@@ -50,7 +49,8 @@
                         </tr>
                         
                     </thead>
-                    <tbody>
+                    <% for(let p of produto){%>
+                    <tbody id="linhaDaTabela">
                         <tr align="center" id="primeiraLinha">
                             <td><img src="./img/<%= p.img%>" alt="<%= p.nome%>"></td>
                             <td> <%= p.nome%> </td>
@@ -61,31 +61,42 @@
                             <td></td>
                             <td></td>
                             <td>Quantidade Total De Itens</td>
-                            <td align="center"> <strong> <%= produto.qtd%> </strong> </td>
+                            <td align="center"> <strong> <%= p.qtd%> </strong> </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Valor unitário</td>
+                            <td align="center"> <strong> R$<%= p.preco%> </strong> </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Subtotal</td>
-                            <td align="center"> <strong>R$<%= p.preco%> </strong> </td>
+                            <td align="center"> <strong>R$ <%= p.preco * p.qtd %> </strong> </td>
                         </tr>
+                        <tr id="maisProduto">
+                        </tr>
+                    </tbody>
+                    <%}%>
+                    <tfoot>
                         <tr id="espaco">
                             <td></td>
                             <td></td>
                             <td>Entrega</td>
                             <td align="center"><strong> Calcular</strong> </td>
                         </tr>
-                    </tbody>
-                    <tfoot>
-
                         <tr align="center">
                             <td></td>
                             <td></td>
-                            <td colspan="2" id="total">Total <%= p.preco%> </td>
+
+                            <td colspan="2" id="total">Total R$ <%= (produto.preco * produto.qtd) %></td>
+                            
                         </tr>
+                        
                         <tr id="espaco2">
                             <td ></td>
-                            <td align="end"><a href="#" id="comprando">Continuar Comprando</a> Ou</td>
+                            <td align="end"><a href="/" id="comprando">Continuar Comprando</a> Ou</td>
                             <td colspan="2" align="center"> 
                                 <form action="/finalizacao"><button id="botao">FINALIZAR PEDIDO</button></form>
                             </td>
@@ -93,7 +104,6 @@
                     </tfoot>
                 </table>
             </div>
-        <%}%>
         </div>
         <section id="pre-footer">
             <article id="categorias">
@@ -142,6 +152,17 @@
         </div>
 
     </footer>
+    <script>
+        const linhaDaTabela = document.getElementById("linhaDaTabela");
+        const continuarComprando = document.getElementById("comprando");
+        const maisProduto = document.getElementById("maisProduto");
+        const total = document.getElementById("total");
+
+        continuarComprando.addEventListener("click",valorTotal());
+        function valorTotal(){
+            console.log(total)
+        }
+    </script>
 </body>
 
 </html>

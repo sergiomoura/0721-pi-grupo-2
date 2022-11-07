@@ -3,6 +3,12 @@ const homeController = require('../controller/homeController');
 const router = express.Router();
 
 router.get('/', homeController.showHome);
+router.get('/skincare', homeController.showHome);
+// router.get('/rosto', homeController.showHomeRosto);
+// router.get('/labios', homeController.showHomeLabios);
+// router.get('/olhos', homeController.showHomeOlhos);
+// router.get('/lancamentos', homeController.showHomeLacamentos);
+// router.get('/promocoes', homeController.showHomePromocoes);
 
 router.get('/login', homeController.showLogin);
 router.get('/listagem', homeController.showListagem);

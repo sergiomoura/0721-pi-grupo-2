@@ -10,40 +10,7 @@
 </head>
 
 <body>
-    <header>
-        <section id="conteiner_cabecalho">
-            <div>
-                <img id="logo" src="/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png"
-                    alt="Logo LanggGlow">
-            </div>
-            <ul id="conteiner_informacoes">
-                <li>
-                    <a href='#'> <img src="img/perfil_do_usario.png" alt="icone do usuario"></a>
-                </li>
-                <div id="conteiner_pesquisa_sacola">
-                    <p class="pesquisa_sacola">
-                        <a href='#'> <img src="img/icone_pesquisa.png" alt="icone de pesquisa"></a>
-                    </p>
-                    <p class="pesquisa_sacola">
-                        <a href='#'> <img src="img/sacola (2).png" alt="icone de sacola"></a>
-                    </p>
-                </div>
-            </ul>
-            </div>
-        </section>
-        <section id="conteiner_nav">
-            <nav>
-                <ul>
-                    <li><a href="#">Skincare</a></li>
-                    <li><a href="#">Rosto</a></li>
-                    <li><a href="#">Lábios</a></li>
-                    <li><a href="#">Olhos</a></li>
-                    <li><a href="#">Lançamentos</a></li>
-                    <li><a href="#">Promoções</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+    <%- include("parts/header.ejs") %>
     <main>
         <article id="imagens_descricao">
             <section id="imagens">
@@ -53,7 +20,6 @@
                         <input type="radio" name="slide" id="slide2">
                         <input type="radio" name="slide" id="slide3">
                         <input type="radio" name="slide" id="slide4">
-
 
                         <div class="slide s1">
                             <img src="img/<%= produto.img %>" alt="<%= produto.nome%>">;
@@ -273,7 +239,8 @@
             precaucao.classList.add("destaques");
             composicao.classList.remove("destaques")
             detalhes.classList.remove("destaques")
-            textoDet.innerHTML = '<p> <%= produto.precaucao %> </p>'
+            //ESCREVI PRECAUCAO ERRADO NO SQL HEH
+            textoDet.innerHTML = '<p> <%= produto.precausao %> </p>'
         }
     </script>
 </body>

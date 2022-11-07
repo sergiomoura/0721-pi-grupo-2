@@ -9,39 +9,7 @@
    <title>Home</title>
 </head>
 <body>
-   <header>
-      <section id="conteiner_cabecalho">
-         <div>
-            <img id="logo" src="/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png" alt="Logo LanggGlow">
-         </div>
-         <ul id="conteiner_informacoes">
-            <li>
-               <a href='#'> <img src="img/perfil_do_usario.png" alt="icone do usuario"></a>
-            </li>
-            <div id="conteiner_pesquisa_sacola">
-               <p class="pesquisa_sacola">
-                  <a href='#'> <img src="img/icone_pesquisa.png" alt="icone de pesquisa"></a>
-               </p>
-               <p class="pesquisa_sacola">
-                  <a href='#'> <img src="img/sacola (2).png" alt="icone de sacola"></a>
-               </p>
-            </div>
-         </ul>
-         </div>
-      </section>
-      <section id="conteiner_nav">
-         <nav>
-            <ul>
-               <li><a href="#">Skincare</a></li>
-               <li><a href="#">Rosto</a></li>
-               <li><a href="#">Lábios</a></li>
-               <li><a href="#">Olhos</a></li>
-               <li><a href="#">Lançamentos</a></li>
-               <li><a href="#">Promoções</a></li>
-            </ul>
-         </nav>
-      </section>
-   </header>
+   <%- include("parts/header.ejs") %>
 
    <main class="container">
 
@@ -64,89 +32,6 @@
                  </form> -->
          </div>
      <% } %>
-
-      <div class="produto">
-         <img src="img/Base Serum Nude Me.jpg" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img src="img/paleta colorida.jpg" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img src="img/paleta3.jpg" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img src="img/paleta1.jpg" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img src="img/paleta azul.png" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img src="img/paleta colorida.jpg" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img src="img/maquiagem_aberta.jpg" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img src="img/maquiagem_bonita.jpg" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-      <div class="produto">
-         <img src="img/maquiagem_ajeitada.jpg" alt="">
-         <div class="bloco">
-            <p class="produto-nome">Base Promoções</p>
-            <p class="produto-preco">R$80,00</p>
-         </div>
-         <button class="favoritar">Favoritar</button>
-         <button class="add-carrinho">Add carrinho</button>
-      </div>
-
    </main>
    <section id="pre-footer">
       <article id="categorias">
