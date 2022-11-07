@@ -32,6 +32,8 @@ CREATE TABLE IF NOT EXISTS `langglow`.`produtos` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(60) NOT NULL,
   `img` VARCHAR(60) NOT NULL,
+  `img1` VARCHAR(60) NOT NULL,
+  `img2` VARCHAR(60) NOT NULL,
   `categorias_id` INT NOT NULL,
   `preco` DECIMAL(6,2) NOT NULL,
   `descricao` VARCHAR(1000) NOT NULL,

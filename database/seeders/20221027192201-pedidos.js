@@ -2,7 +2,7 @@
 const pedidos=[{
   id:1,
   //0(não saiu da loja),1(saiu da loja),2(esta a caminho),3(pedido entregue ao destinatario)
-  //status:,
+  status:0,
   clientes_id:3,
   valor_total:120.00,
   endereco_entrega:'na casa da fulana'
