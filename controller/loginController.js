@@ -1,28 +1,33 @@
-const {sequelize} = require('../database/models');
+const {Clientes,sequelize} = require('../database/models');
+const bcrypt = require('bcrypt');
+
 const loginController= {
     showLogin: (req, res) => {
         res.render('login.ejs');
     },
     login: async (req, res) => {
-        let sql = `SELECT * FROM clientes`;
-        let clientes = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
-        return res.render('home.ejs',{clientes});
+        // let sql = `SELECT * FROM clientes`;
+        // let clientes = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
+        // return res.render('home.ejs',{clientes});
+        const { nome, email, senha} = req.body;
 
-      
-        // let usuario = usuarios.find(
-        //     u => emailDigitado == u.email && senhaDigitada == u.senha ? true : false
-        // );
+        const u = await Clientes.create(
+            {
+                nome,
+                email,
+                senha: bcrypt.hashSync(senha, 10)
+            }
+        )
+      req.session.Clientes = u;
 
-        // 4 - Caso não exista, dar mensagem "Usuário inexistente!"
-        // Caso exista o usuário com email senha dados, retornar OK!
-        // if (usuario == undefined) {
-        //     res.render('login.ejs', { erro: 1 })
-        // } else {
-        //     req.session.usuario = usuario;
-        //     res.redirect('/admin');
-        // }
+      res.redirect('/home')
     },
-    //direcionar o úsuario para a rota /admin;
+    mostrarHome: (req, res) => {
+        let nome = req.session.Clientes.nome;
+
+        res.render('home.ejs', { nome });
+    },
+
     // mostraEsqueci: (req, res) => {
     //     res.render('esqueci.ejs')
     // },
@@ -32,6 +37,7 @@ const loginController= {
     // mostraAdmin: (req, res) => {
     //     res.render('admin.ejs')
     // }
+
 }
 
 module.exports = loginController;
