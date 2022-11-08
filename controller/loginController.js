@@ -7,23 +7,24 @@ const loginController= {
     },
     login: async (req, res) => {
         // let sql = `SELECT * FROM clientes`;
-        // let clientes = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
-        // return res.render('home.ejs',{clientes});
-        const { nome, email, senha} = req.body;
+        // let cliente = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
+        // return res.render('home.ejs',{cliente});
+        const { email, senha} = req.body;
 
-        const u = await Cliente.create(
-            {
-                nome,
-                email,
-                senha: bcrypt.hashSync(senha, 10)
-            }
-        )
-      req.session.Cliente = u;
+        let cliente = await Cliente.findOne({where:{email}});
 
-      res.redirect('/home')
+        if (cliente == undefined){
+            return res.send('email não encontrado')
+        }
+        if(!bcrypt.compareSync(senha, cliente.senha)){
+            return res.send('senha inválida')
+        }
+
+        req.session.Cliente = cliente;
+          res.redirect('/')
     },
     mostrarHome: (req, res) => {
-        let nome = req.session.Clientes.nome;
+        let nome = req.session.Cliente.nome;
 
         res.render('home.ejs', { nome });
     },
