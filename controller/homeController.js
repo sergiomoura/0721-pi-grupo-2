@@ -45,12 +45,14 @@ const paginasController = {
         res.redirect('/carrinho');
     },
     showCarrinho: async (req, res)=>{
-        // let sql = `SELECT * FROM produtos`;
-        // let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
-        // let produto = req.session.carrinho;
-        // res.send(req.session.carrinho);
-        return res.render('carrinho.ejs',{produto:req.session.carrinho});
+        let produtos = req.session.carrinho;
+        let total = 0;
+        for (const p of produtos) {
+            total = total + (p.preco * p.qtd);
+        }
+        return res.render('carrinho.ejs',{produto:req.session.carrinho, total});
     },
+    
     showFinalizacao:(req, res)=>{
         res.render('finalizacao.ejs')
     },

@@ -17,7 +17,6 @@ router.get('/produto', homeController.showProdutoInterno);
 router.get('/produto/:id', homeController.showProdutoInterno);
 
 router.get('/carrinho', homeController.showCarrinho);
-router.get('/carrinho:id', homeController.showCarrinho);
 router.post('/carrinho', homeController.adicionarCarrinho);
 
 router.get('/finalizacao', homeController.showFinalizacao);
