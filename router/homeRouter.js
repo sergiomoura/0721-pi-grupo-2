@@ -10,7 +10,7 @@ router.get('/skincare', homeController.showHome);
 // router.get('/lancamentos', homeController.showHomeLacamentos);
 // router.get('/promocoes', homeController.showHomePromocoes);
 
-// router.get('/login', loginController.showLogin);
+
 router.get('/listagem', homeController.showListagem);
 
 router.get('/produto', homeController.showProdutoInterno);
@@ -22,8 +22,6 @@ router.post('/carrinho', homeController.adicionarCarrinho);
 
 router.get('/finalizacao', homeController.showFinalizacao);
 router.get('/painel' , homeController.showPainel);
-router.get('/cadastro' , homeController.showCadastro);
-
 module.exports = router;
 
 

@@ -1,4 +1,4 @@
-const {Clientes,sequelize} = require('../database/models');
+const {Cliente,sequelize} = require('../database/models');
 const bcrypt = require('bcrypt');
 
 const loginController= {
@@ -11,14 +11,14 @@ const loginController= {
         // return res.render('home.ejs',{clientes});
         const { nome, email, senha} = req.body;
 
-        const u = await Clientes.create(
+        const u = await Cliente.create(
             {
                 nome,
                 email,
                 senha: bcrypt.hashSync(senha, 10)
             }
         )
-      req.session.Clientes = u;
+      req.session.Cliente = u;
 
       res.redirect('/home')
     },

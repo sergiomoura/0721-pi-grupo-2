@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `langglow`.`clientes` (
   `nome` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
   `senha` VARCHAR(64) NOT NULL,
-  `endereco` VARCHAR(250) NOT NULL,
+  `endereco` VARCHAR(250),
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
