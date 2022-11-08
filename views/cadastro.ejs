@@ -19,23 +19,23 @@
 
       <article>
         <p id="titulo"> Cadastro </p>
-        <form action="/login">
+        <form method="post" action="/cadastro">
           <div id="info">
             <div class="classe">
                 <label for="Nome" >Nome:</label>
-                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Nome" name="nome">
               </div>
             <div class="classe">
               <label for="email" > Email:</label>
-              <input type="email" placeholder="E-mail">
+              <input type="email" placeholder="E-mail" name="email">
             </div>
             <div class="classe">
               <label for="password" >Crie sua senha:</label>
-              <input type="password" placeholder="crie sua senha...">
+              <input type="password" placeholder="crie sua senha..." name="senha">
             </div>
             <div class="classe">
                 <label for="password" >Repita senha:</label>
-                <input type="password" placeholder="repita sua senha...">
+                <input type="password" placeholder="repita sua senha..." name="confirmacao">
               </div>
           </div>
          

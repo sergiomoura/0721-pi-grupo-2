@@ -1,8 +1,9 @@
 const {sequelize} = require('../database/models');
 const paginasController = {
-    showLogin:(req,res)=>{
-        res.render('login.ejs')
-    },
+    // A função showLogin vai ser usada no loginController!!!
+    // showLogin:(req,res)=>{
+    //     res.render('login.ejs')
+    // },
     showHome: async (req,res) => {
         let sql = `SELECT * FROM produtos`;
         let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});

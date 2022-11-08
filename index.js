@@ -4,6 +4,8 @@ const path = require('path');
 const session = require("express-session");
 //importando o homeRouter
 const homeRouter = require('./router/homeRouter');  
+const loginRouter = require('./router/loginRouter');
+const cadastroRouter = require('./router/cadastroRouter');
 const app = express();  
 app.use(express.urlencoded({ extended: false }));
 app.use(session({
@@ -17,6 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');  
   //  Fazer com que ele use o homeRouter 
 app.use('/', homeRouter); 
+app.use('/', loginRouter);
+app.use('/', cadastroRouter);
   // //  fazer o servidor rodar na porta 3000
 app.listen(8000);
 
