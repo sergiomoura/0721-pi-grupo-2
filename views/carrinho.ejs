@@ -89,8 +89,8 @@
                         <tr align="center">
                             <td></td>
                             <td></td>
-
-                            <td colspan="2" id="total">Total R$ <%= (produto.preco * produto.qtd) %></td>
+                            
+                            <td colspan="2" id="total">Total R$ </td>
                             
                         </tr>
                         
@@ -158,6 +158,8 @@
         const maisProduto = document.getElementById("maisProduto");
         const total = document.getElementById("total");
 
+        linhaDaTabela.classList.add("destaques");
+        
         continuarComprando.addEventListener("click",valorTotal());
         function valorTotal(){
             console.log(total)
