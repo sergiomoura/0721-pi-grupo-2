@@ -1,20 +1,24 @@
 <header>
     <section id="conteiner_cabecalho">
        <div>
-          <img id="logo" src="/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png" alt="Logo LanggGlow">
+         <a href="/"><img id="logo" src="/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png" alt="Logo LanggGlow"></a>
+          
        </div>
+       <%= cliente ? cliente.nome : ''%>
+
+       
        <ul id="conteiner_informacoes">
           <li>
-             <a href='/login'> <img src="img/perfil_do_usario.png" alt="icone do usuario"></a>
+             <a href='/login'> <img src="/img/perfil_do_usario.png" alt="icone do usuario"></a>
           </li>
-          <div id="conteiner_pesquisa_sacola">
-             <p class="pesquisa_sacola">
-                <a href='#'> <img src="img/icone_pesquisa.png" alt="icone de pesquisa"></a>
-             </p>
-             <p class="pesquisa_sacola">
-                <a href='#'> <img src="img/sacola (2).png" alt="icone de sacola"></a>
-             </p>
-          </div>
+            <div id="conteiner_pesquisa_sacola">
+               <p class="pesquisa_sacola">
+                  <a href='#'> <img src="/img/icone_pesquisa.png" alt="icone de pesquisa"></a>
+               </p>
+               <p class="pesquisa_sacola">
+                  <a href='#'> <img src="/img/sacola (2).png" alt="icone de sacola"></a>
+               </p>
+            </div>
        </ul>
        </div>
     </section>

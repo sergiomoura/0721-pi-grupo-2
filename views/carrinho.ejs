@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/carrinho.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Carrinho</title>
 </head>
 
@@ -50,12 +51,12 @@
                         
                     </thead>
                     <% for(let p of produto){%>
-                    <tbody id="linhaDaTabela">
+                    <tbody id="produto_<%=p.id%>" class="produto">
                         <tr align="center" id="primeiraLinha">
                             <td><img src="./img/<%= p.img%>" alt="<%= p.nome%>"></td>
                             <td> <%= p.nome%> </td>
                             <td> <%= p.qtd%></td>
-                            <td>  R$<%= p.preco%></td>
+                            <td> R$<%= p.preco%></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -64,7 +65,12 @@
                             <td align="center"> <strong> <%= p.qtd%> </strong> </td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td> 
+                                <button id="bt_<%= p.id %>" type="button">
+                                <i class='material-icons' id= <%= p.id%> >delete</i>
+                                </button>
+                             </td>
+                             
                             <td></td>
                             <td>Valor unitário</td>
                             <td align="center"> <strong> R$<%= p.preco%> </strong> </td>
@@ -152,19 +158,9 @@
         </div>
 
     </footer>
-    <script>
-        const linhaDaTabela = document.getElementById("linhaDaTabela");
-        const continuarComprando = document.getElementById("comprando");
-        const maisProduto = document.getElementById("maisProduto");
-        const total = document.getElementById("total");
+    <script src='js/carrinho.js'> </script>
 
-        linhaDaTabela.classList.add("destaques");
-        
-        continuarComprando.addEventListener("click",valorTotal());
-        function valorTotal(){
-            console.log(total)
-        }
-    </script>
+
 </body>
 
 </html>
