@@ -6,6 +6,7 @@ const session = require("express-session");
 const homeRouter = require('./router/homeRouter');  
 const loginRouter = require('./router/loginRouter');
 const cadastroRouter = require('./router/cadastroRouter');
+const exibiDadosDeClientesLogados = require('./middlewares/exibiDadosDeClientesLogados');
 const app = express();  
 app.use(express.urlencoded({ extended: false }));
 app.use(session({
@@ -13,6 +14,7 @@ app.use(session({
   resave:true,
   saveUninitialized:true,
 }));
+app.use(exibiDadosDeClientesLogados);
 
 app.use(express.static(path.join(__dirname, 'public')));  
 //defini que a view engine sera ejs
