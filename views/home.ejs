@@ -12,24 +12,18 @@
    <%- include("parts/header.ejs") %>
 
    <main class="container">
-
       <% for(let p of produtos){ %>
-         <div class="produto">
+        <div class="produto">
+             <a href="/produto/<%= p.id%>">
                  <img src="img/<%= p.img%>" alt="<%= p.nome%>">
                  <div class="bloco">
                   <p class="produto-nome"> <%= p.nome%> </p>
                   <p class="produto-preco">R$ <%= p.preco%></p>
                  </div>
-                 <button class="favoritar">Favoritar</button>
-
-                 <!-- o metodo pode ser get? -->
-
-                  <a href="/produto/<%= p.id%>"> Detalhes </a>
-                 
-                 <!-- <form class="carro" action="/carrinho" method="post">
-                     <input type="hidden" name="id" value="<%= p.id %>">
-                     <button type="submit">+Add</button>
-                 </form> -->
+                 <button class="favoritar">
+                    <img id="estrela" src="img/estrela.png" alt="estrela">
+                    Favoritar</button>
+                </a>
          </div>
      <% } %>
    </main>

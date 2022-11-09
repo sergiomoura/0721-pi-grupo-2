@@ -44,6 +44,12 @@ const paginasController = {
         }
         res.redirect('/carrinho');
     },
+    
+    removerItemDoCarrinho: async(req, res) => {
+        let id = req.params.id
+        req.session.carrinho = req.session.carrinho.filter(p => id != p.id)
+        return res.json({id}).status(200);
+    },
     showCarrinho: async (req, res)=>{
         let produtos = req.session.carrinho;
         let total = 0;

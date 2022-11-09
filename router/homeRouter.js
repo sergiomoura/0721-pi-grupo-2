@@ -16,6 +16,7 @@ router.get('/listagem', homeController.showListagem);
 router.get('/produto', homeController.showProdutoInterno);
 router.get('/produto/:id', homeController.showProdutoInterno);
 
+router.delete('/carrinho/:id',homeController.removerItemDoCarrinho);
 router.get('/carrinho', homeController.showCarrinho);
 router.post('/carrinho', homeController.adicionarCarrinho);
 
