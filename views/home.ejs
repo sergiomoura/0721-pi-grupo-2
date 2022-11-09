@@ -1,56 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="/css/home.css">
-   <title>Home</title>
-</head>
-<body>
-   <%- include("parts/header.ejs") %>
 
-   <main class="container">
-      <% for(let p of produtos){ %>
-        <div class="produto">
-             <a href="/produto/<%= p.id%>">
-                 <img src="img/<%= p.img%>" alt="<%= p.nome%>">
-                 <div class="bloco">
-                  <p class="produto-nome"> <%= p.nome%> </p>
-                  <p class="produto-preco">R$ <%= p.preco%></p>
-                 </div>
-                 <button class="favoritar">
-                    <img id="estrela" src="img/estrela.png" alt="estrela">
-                    Favoritar</button>
-                </a>
-         </div>
-     <% } %>
-   </main>
-   <section id="pre-footer">
-      <article id="categorias">
-          <ul>
-              Categorias:
-              <li><a href="#">Skincare</a></li>
-              <li><a href="#">Rosto</a></li>
-              <li><a href="#">Lábios</a></li>
-              <li><a href="#">Olhos</a></li>
-              <li><a href="#">Lançamentos</a></li>
-              <li><a href="#">Promoções</a></li>
-          </ul>
-      </article>
-      <article id="contato">
-          <ul>
-              <li>
-                  Atendimento ao Cliente
-              </li>
-              <li>
-                  Central SAC: (00) 0000-0000
-              </li>
-              <li>
-                  Email: faleconosco@langglow.com
-              </li>
-      </article>
-  </section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <%- include("parts/header.ejs") %>
+    <div class="carousel fade"></div>
+        <main class="container">
+            <% for(let p of produtos){ %>
+                <div class="produto">
+                    <a href="/produto/<%= p.id%>">
+                        <img src="img/<%= p.img%>" alt="<%= p.nome%>">
+                        <div class="bloco">
+                            <p class="produto-nome">
+                                <%= p.nome%>
+                            </p>
+                            <p class="produto-preco">R$ <%= p.preco%>
+                            </p>
+                        </div>
+                        <button class="favoritar">
+                            <img id="estrela" src="img/estrela.png" alt="estrela">
+                            Favoritar</button>
+                    </a>
+                </div>
+                <% } %>
+        </main>
+        <section id="pre-footer">
+            <article id="categorias">
+                <ul>
+                    Categorias:
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Rosto</a></li>
+                    <li><a href="#">Lábios</a></li>
+                    <li><a href="#">Olhos</a></li>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Promoções</a></li>
+                </ul>
+            </article>
+            <article id="contato">
+                <ul>
+                    <li>
+                        Atendimento ao Cliente
+                    </li>
+                    <li>
+                        Central SAC: (00) 0000-0000
+                    </li>
+                    <li>
+                        Email: faleconosco@langglow.com
+                    </li>
+            </article>
+        </section>
+        <script>
+            const images = [
+            "https://images.pexels.com/photos/2537930/pexels-photo-2537930.jpeg?auto=compress&cs=tinysrgb&w=1600", 
+            "https://images.pexels.com/photos/2253834/pexels-photo-2253834.jpeg?auto=compress&cs=tinysrgb&w=1600",
+            'https://images.pexels.com/photos/301367/pexels-photo-301367.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'https://images.pexels.com/photos/1438065/pexels-photo-1438065.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'https://images.pexels.com/photos/1327689/pexels-photo-1327689.jpeg?auto=compress&cs=tinysrgb&w=1600',
+            'https://images.pexels.com/photos/2721977/pexels-photo-2721977.jpeg?auto=compress&cs=tinysrgb&w=1600'
+        
+    ];
+            const carousel = document.querySelector(".carousel");
+            const interval = setInterval(function () {
+                startCarousel();
+            }, 3000);
+            var index = 1;
+
+            startCarousel = () => {
+                carousel.style.backgroundImage = `url(${images[index++]})`;
+                carousel.classList.remove("fade");
+                void carousel.offsetWidth;
+                carousel.classList.add("fade");
+                if (index > images.length - 1) index = 0;
+            }
+        </script>
 </body>
+
 </html>

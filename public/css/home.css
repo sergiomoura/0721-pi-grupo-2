@@ -4,6 +4,8 @@ header>#conteiner_cabecalho {
   background-color: rgba(237, 160, 160, 0.866);
   width: 100%;
   display: flex;
+  height: 120px;
+  /* border-bottom:ridge 2px rgba(0, 0, 0, 0.233); */
 }
 
 #conteiner_cabecalho>div {
@@ -12,12 +14,13 @@ header>#conteiner_cabecalho {
 
 #logo {
   grid-area: logo;
-  padding-top: 20px;
-  height: 140px;
+  padding-top: 10px;
+  height: 120px;
+  padding-left: 10px;
 }
 
 #conteiner_informacoes {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-right: 40px;
   width: 50%;
 }
@@ -47,8 +50,9 @@ header>#conteiner_cabecalho {
 }
 
 #conteiner_nav {
-  border-bottom: 3px double rgba(36, 36, 34, 0.188);
+  border-bottom: 3px double rgba(175, 146, 30, 0.458);
   margin: 0%;
+
 }
 
 #conteiner_nav>nav {
@@ -66,19 +70,39 @@ header>#conteiner_cabecalho {
 
 #conteiner_nav>nav>ul>li>a {
   text-decoration: none;
-  color: rgb(142, 102, 127);
-  width: 10px;
-  font-size: 16px;
+    letter-spacing: 4px;
+    color: rgb(87, 62, 62);
+    width: 10px;
+    font-size: 14px;
+    font-weight:lighter;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Julius Sans One', sans-serif; */
 }
 
 #conteiner_nav>nav>ul>li>a:hover {
-  text-decoration: underline;
+  color: rgb(232, 224, 224);
+  transition: 1s;
 }
 
 body {
   margin: 0%;
   background: repeating-linear-gradient(rgb(248, 245, 245rgba(0, 0, 0, 0.542)4));
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.carousel{
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.pexels.com/photos/1327689/pexels-photo-1327689.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  border-bottom: double rgba(175, 146, 30, 0.458) 3px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
 .container {
@@ -95,19 +119,15 @@ body {
 
 
 .bloco {
-
   width: 100%; 
   height: 120px;
   width: 100%;
   height: 120px;
   background-color:rgba(237, 160, 160, 0.866);
-  background-color: rgba(237, 160, 160, 0.866);
-
   position: absolute;
   bottom: 25px;
   opacity: 0;
   transition: opacity 400ms linear;
-
   border-bottom-right-radius: 14px;
   border-bottom-left-radius: 14px;
 
@@ -196,6 +216,15 @@ footer{
   font-size: 25px;
   letter-spacing: 7px;
 }
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
 @media(max-width:480px){
   main{
       width: 330px;
@@ -203,7 +232,7 @@ footer{
  
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 /* #header {
 
