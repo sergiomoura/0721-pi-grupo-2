@@ -9,9 +9,48 @@
     <link rel="stylesheet" href="/css/home.css">
     <title>Home</title>
 </head>
-
+<header>
+    <section id="conteiner_cabecalho">
+       <div>
+         <a href="/"><img id="logo" src="/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png" alt="Logo LanggGlow"></a>
+       </div>
+      
+       
+       
+       <ul id="conteiner_informacoes">
+         <li id="primeira_linha">
+            <p id="bemVindo">
+               <%= cliente ?`Bem vinde ${cliente.nome} à Langglow!` : ''%>
+            </p>
+        </li>
+          <li>
+             <a href='/login'> <img src="/img/perfil_do_usario.png" alt="icone do usuario"></a>
+          </li>
+            <li id="conteiner_pesquisa_sacola">
+               <p class="pesquisa_sacola">
+                  <a href='#'> <img src="/img/icone_pesquisa.png" alt="icone de pesquisa"></a>
+               </p>
+               <p class="pesquisa_sacola">
+                  <a href='/carrinho'> <img src="/img/sacola (2).png" alt="icone de sacola"></a>
+               </p>
+            </li>
+       </ul>
+       </div>
+    </section>
+    <section id="conteiner_nav">
+       <nav>
+          <ul>
+             <li><a href="#">Skincare</a></li>
+             <li><a href="#">Rosto</a></li>
+             <li><a href="#">Lábios</a></li>
+             <li><a href="#">Olhos</a></li>
+             <li><a href="#">Lançamentos</a></li>
+             <li><a href="#">Promoções</a></li>
+          </ul>
+       </nav>
+    </section>
+ </header>
 <body>
-    <%- include("parts/header.ejs") %>
         <div class="carousel fade"></div>
         <input type="text" id="todos" disabled="disabled" value="Todos" />
         <main >
