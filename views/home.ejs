@@ -13,71 +13,9 @@
 <body>
     <%- include("parts/header.ejs") %>
         <div class="carousel fade"></div>
-        
+        <input type="text" id="todos" disabled="disabled" value="Todos" />
         <main >
-            <!-- <section id="maisVendidos">
-                <h2>Hanking dos Mais Vendidos</h2>
-                
-                <div class="produto">
-                    <a href="/produto/6">
-                        <img src="img/Paleta De Sombras Ready For.webp" alt="Paleta De Sombras Ready For">
-                        <div class="bloco">
-                            <p id="saber">
-                                Clique para saber mais
-                            </p>
-                            <p class="produto-nome">
-                                Paleta De Sombras Ready For
-                            </p>
-                            <p class="produto-preco">R$ 70.00
-                            </p>
-
-                        </div>
-                        <button class="favoritar">
-                            <!-- <img id="estrela" src="img/estrela.png" alt="estrela"> -->
-                            <!-- Favoritar
-                        </button>
-                    </a>
-                </div>
-                <a href="/">
-                    <img src="img/pinceis.webp" alt="pinceis bonitos">
-                    <div class="bloco">
-                        <p id="saber">
-                            Clique para saber mais
-                        </p>
-                        <p class="produto-nome">
-                            Pinceis Lannglow
-                        </p>
-                        <p class="produto-preco">R$ 170.00
-                        </p>
-
-                    </div>
-                    <button class="favoritar">
-                      
-                    </button>
-                </a>
-            </div>
-                <div class="produto">
-                    <a href="/produto/5">
-                        <img src="img/Paleta De  Glitter.jpg" alt="Paleta De  Glitter">
-                        <div class="bloco">
-                            <p id="saber">
-                                Clique para saber mais
-                            </p>
-                            <p class="produto-nome">
-                                Paleta De  Glitter
-                            </p>
-                            <p class="produto-preco">R$ 80.00
-                            </p>
-
-                        </div>
-                        <button class="favoritar">
-                            <img id="estrela" src="img/estrela.png" alt="estrela"> -->
-                            <!-- Favoritar
-                        </button>
-                    </a>
-                </div>
-            </section>   -->
-            <section class="container">
+        <section class="container">  
                 <% for(let p of produtos){ %>
                     <div class="produto">
                         <a href="/produto/<%= p.id%>">
@@ -93,10 +31,13 @@
                                 </p>
     
                             </div>
-                            <button class="favoritar">
-                                <!-- <img id="estrela" src="img/estrela.png" alt="estrela"> -->
-                                Favoritar
-                            </button>
+                            <a href="/">
+                                <button class="favoritar">
+                                    <img id="estrela" src="img/estrela.png" alt="estrela">
+                                    Favoritar
+                                </button>
+                            </a>
+                            
                         </a>
                     </div>
                     <% } %>
