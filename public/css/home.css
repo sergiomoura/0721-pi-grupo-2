@@ -52,6 +52,7 @@ header>#conteiner_cabecalho {
 #conteiner_nav {
   border-bottom: 3px double rgba(175, 146, 30, 0.458);
   margin: 0%;
+  background-color: rgba(23, 23, 23, 0.886);
 
 }
 
@@ -71,7 +72,7 @@ header>#conteiner_cabecalho {
 #conteiner_nav>nav>ul>li>a {
   text-decoration: none;
     letter-spacing: 4px;
-    color: rgb(87, 62, 62);
+    color: rgb(153, 107, 107);
     width: 10px;
     font-size: 14px;
     font-weight:lighter;
@@ -87,7 +88,8 @@ header>#conteiner_cabecalho {
 body {
   margin: 0%;
   background: repeating-linear-gradient(rgb(248, 245, 245rgba(0, 0, 0, 0.542)4));
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
 }
 .carousel{
   width: 100%;
@@ -104,62 +106,68 @@ body {
   animation-name: fade;
   animation-duration: 2s;
 }
-
+#maisVendidos{
+  background-color: rgba(23, 23, 23, 0.886);
+}
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  margin-top: 30px;
+
+}
+.produto{
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.074);
+  
+}
+.produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 
 }
 
-
-
 .bloco {
   width: 100%; 
-  height: 120px;
-  width: 100%;
-  height: 120px;
-  background-color:rgba(237, 160, 160, 0.866);
+  height: 100px;
+  border: 1px dotted rgba(226, 205, 72, 0.453);
+  background-color:rgba(255, 255, 255, 0.628);
   position: absolute;
-  bottom: 25px;
+  bottom: 35px;
   opacity: 0;
   transition: opacity 400ms linear;
   border-bottom-right-radius: 14px;
-  border-bottom-left-radius: 14px;
-
+ 
 }
 
 .produto:hover .bloco {
   opacity: 1;
 }
 
-.produto img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 15px;
+#saber{
+  text-align: center;
+  color: black;
+  text-decoration:underline rgba(52, 47, 0, 0.122);
+  margin: 0%;
 }
-
-.produto {
-  position: relative;
-}
-
 .produto-nome {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.94);
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  margin: 0%;
+ padding:10px 0  ;
 }
 
 .produto-preco {
-  color: #fff;
+  margin: 0%;
+  color: rgba(0, 0, 0, 0.984);
+  background-color: rgba(255, 255, 255, 0.74);
+  border-top: double 3px rgba(203, 234, 102, 0.194);
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-family: sans-serif;
+  font-size: 28px;
 }
 
 .favoritar {
@@ -167,13 +175,6 @@ body {
   border-radius: 3px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border:  rgba(237, 160, 160, 0.866);
-}
-
-.add-carrinho {
-  background-color:  rgba(237, 160, 160, 0.866);
-  border-radius: 3px;
- text-decoration: none;
- border:  rgba(237, 160, 160, 0.866);
 }
 
 
@@ -205,16 +206,97 @@ body {
 #contato{
   align-self: center
 }
-footer{
+footer {
   background-color: rgb(0, 0, 0);
   height: 320px;
   padding-top: 90px;
-  padding-bottom:5px ;
+  padding-bottom: 5px;
   text-align: center;
   color: rgba(240, 248, 255, 0.564);
   font-family: 'Josefin Slab', serif;
   font-size: 25px;
   letter-spacing: 7px;
+}
+
+footer {
+  border: solid rgba(35, 133, 224, 0.246) 2px;
+  animation-name: borda;
+  animation-duration: 20s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+#robos {
+  margin: 23px 90px;
+  height: 200px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+#robos>p>a>img {
+  height: 70px;
+  border: 3px double rgba(246, 246, 246, 0.63);
+  background-color: rgba(78, 233, 166, 0);
+  opacity: 20%;
+  padding: 6px;
+}
+
+#robos>p>a>img:hover {
+  background-color: rgba(9, 160, 242, 0.123);
+  opacity: 100%;
+  transition: .90s;
+}
+
+#instituicoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#instituicoes>p {
+  margin: 0%;
+}
+
+#instituicoes>p>a>img {
+  height: 37px;
+  width: 40px;
+  opacity: 20%;
+  padding: 4px;
+}
+
+#instituicoes>p>a>img:hover {
+  opacity: 100%;
+  transition: .90s;
+
+}
+
+@keyframes borda {
+  0% {
+      border: solid rgba(86, 157, 225, 0.246) 2px;
+  }
+
+  20% {
+      border: solid rgba(165, 167, 168, 0.581) 2px;
+  }
+
+  40% {
+      border: solid rgba(8, 79, 145, 0.571) 2px;
+
+  }
+
+  60% {
+      border: solid rgba(165, 167, 168, 0.581) 2px;
+  }
+
+  80% {
+      border: solid rgba(27, 174, 174, 0.46) 2px;
+  }
+
+  100% {
+      border: solid rgba(2, 6, 9, 0.926) 2px;
+  }
 }
 @-webkit-keyframes fade {
   from {opacity: 0.8}
@@ -233,76 +315,3 @@ footer{
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-
-/* #header {
-
-    grid-area: header;
-    background-image: url(/public/img/Rectangle\ 64\ \(1\).png);
-    background-size: 100% 100% fixed;
-    background-color: rgba(255, 159, 178, 0.39);
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "logo  informacoes_contato";
-  }
-  
-  #logo {
-    grid-area: logo;
-    padding-top: 20px;
-    padding-left: 580px;
-    height: 140px;
-    background-color: rgba(127, 255, 212, 0);
-  
-  }
-  
-  #conteiner_informacoes {
-    margin-top: 50px;
-    margin-right: 40px;
-  }
-  
-  /* .informacoes_contato{
-    grid-area: informacoes_contato;
-    width: auto;
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 5px;
-  }
-   */
-/* .conteiner {
-    display: grid;
-  
-  }
-  
-  .box1 {
-    height: 30px;
-    background-color: rgb(255, 240, 240);
-    border-radius: 7px;
-  }
-  
-  .texto {
-    color: black;
-    text-align: center;
-  
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .link {
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Lusitana', serif;
-    margin: 7px;
-    font-size: 20px;
-  }
-  
-  .bloco2 {
-    height: 100px;
-    background-image: url(/public/img/base.jpg);
-    border-radius: 5px;
-    padding: 9px;
-  
-  }  */

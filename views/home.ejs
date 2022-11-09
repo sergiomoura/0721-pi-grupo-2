@@ -12,25 +12,96 @@
 
 <body>
     <%- include("parts/header.ejs") %>
-    <div class="carousel fade"></div>
-        <main class="container">
-            <% for(let p of produtos){ %>
+        <div class="carousel fade"></div>
+        
+        <main >
+            <!-- <section id="maisVendidos">
+                <h2>Hanking dos Mais Vendidos</h2>
+                
                 <div class="produto">
-                    <a href="/produto/<%= p.id%>">
-                        <img src="img/<%= p.img%>" alt="<%= p.nome%>">
+                    <a href="/produto/6">
+                        <img src="img/Paleta De Sombras Ready For.webp" alt="Paleta De Sombras Ready For">
                         <div class="bloco">
+                            <p id="saber">
+                                Clique para saber mais
+                            </p>
                             <p class="produto-nome">
-                                <%= p.nome%>
+                                Paleta De Sombras Ready For
                             </p>
-                            <p class="produto-preco">R$ <%= p.preco%>
+                            <p class="produto-preco">R$ 70.00
                             </p>
+
                         </div>
                         <button class="favoritar">
-                            <img id="estrela" src="img/estrela.png" alt="estrela">
-                            Favoritar</button>
+                            <!-- <img id="estrela" src="img/estrela.png" alt="estrela"> -->
+                            <!-- Favoritar
+                        </button>
                     </a>
                 </div>
-                <% } %>
+                <a href="/">
+                    <img src="img/pinceis.webp" alt="pinceis bonitos">
+                    <div class="bloco">
+                        <p id="saber">
+                            Clique para saber mais
+                        </p>
+                        <p class="produto-nome">
+                            Pinceis Lannglow
+                        </p>
+                        <p class="produto-preco">R$ 170.00
+                        </p>
+
+                    </div>
+                    <button class="favoritar">
+                      
+                    </button>
+                </a>
+            </div>
+                <div class="produto">
+                    <a href="/produto/5">
+                        <img src="img/Paleta De  Glitter.jpg" alt="Paleta De  Glitter">
+                        <div class="bloco">
+                            <p id="saber">
+                                Clique para saber mais
+                            </p>
+                            <p class="produto-nome">
+                                Paleta De  Glitter
+                            </p>
+                            <p class="produto-preco">R$ 80.00
+                            </p>
+
+                        </div>
+                        <button class="favoritar">
+                            <img id="estrela" src="img/estrela.png" alt="estrela"> -->
+                            <!-- Favoritar
+                        </button>
+                    </a>
+                </div>
+            </section>   -->
+            <section class="container">
+                <% for(let p of produtos){ %>
+                    <div class="produto">
+                        <a href="/produto/<%= p.id%>">
+                            <img src="img/<%= p.img%>" alt="<%= p.nome%>">
+                            <div class="bloco">
+                                <p id="saber">
+                                    Clique para saber mais
+                                </p>
+                                <p class="produto-nome">
+                                    <%= p.nome%>
+                                </p>
+                                <p class="produto-preco">R$ <%= p.preco%>
+                                </p>
+    
+                            </div>
+                            <button class="favoritar">
+                                <!-- <img id="estrela" src="img/estrela.png" alt="estrela"> -->
+                                Favoritar
+                            </button>
+                        </a>
+                    </div>
+                    <% } %>
+            </section>
+           
         </main>
         <section id="pre-footer">
             <article id="categorias">
@@ -57,18 +128,37 @@
                     </li>
             </article>
         </section>
+        <footer>
+            Devolopers<br>
+            <div id="robos">
+                <p> <a href="https://github.com/Geovannalessa"><img src="/img/robo.png" alt=""></a> </p>
+                <p> <a href="https://github.com/nati3054"><img src="/img/robo.png" alt=""></a></p>
+                <p> <a href="https://github.com/Gabs-ag"><img src="/img/robo.png" alt=""></a> </p>
+                <p> <a href="https://github.com/AnaCarolll"><img src="/img/robo.png" alt=""></a></p>
+                <p> <a href="https://github.com/LalaGomes"><img src="/img/robo.png" alt=""></a></p>
+            </div>
+            <div id="instituicoes">
+                <p><a
+                        href="https://www.digitalhouse.com/br?utm_source=google&utm_medium=paidsearch&utm_campaign=lead&utm_term=institucional&utm_content=b2c-institucional-curso-landing-texto-lead-kw-institucional-defrase-keyword-all-other-text-carreer-none-none-all-br-search-none&gclid=CjwKCAjwv4SaBhBPEiwA9YzZvLtGrOFPIsJd0EINPYLAdLXe3FQvaQXmI8uYxo-5HBjkkLFWGUs_gRoCT8oQAvD_BwE"><img
+                            src="/img/dh.png" alt="curso DH que nos trouxe o ginho menorqtres"></a></p>
+                <p><a href="https://programadoresdoamanha.org"><img src="/img/progAmanha.png"
+                            alt="o curso que mudou nossas vidas"></a></p>
+                <p><a href="https://github.com/sergiomoura"><img src="/img/ginho.png" alt="nosso querido professor"></a>
+                </p>
+            </div>
+        </footer>
         <script>
             const images = [
-            "https://images.pexels.com/photos/2537930/pexels-photo-2537930.jpeg?auto=compress&cs=tinysrgb&w=1600", 
-            "https://images.pexels.com/photos/2253834/pexels-photo-2253834.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            'https://images.pexels.com/photos/301367/pexels-photo-301367.jpeg?auto=compress&cs=tinysrgb&w=1600',
-            'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=1600',
-            'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=1600',
-            'https://images.pexels.com/photos/1438065/pexels-photo-1438065.jpeg?auto=compress&cs=tinysrgb&w=1600',
-            'https://images.pexels.com/photos/1327689/pexels-photo-1327689.jpeg?auto=compress&cs=tinysrgb&w=1600',
-            'https://images.pexels.com/photos/2721977/pexels-photo-2721977.jpeg?auto=compress&cs=tinysrgb&w=1600'
-        
-    ];
+                "https://images.pexels.com/photos/2537930/pexels-photo-2537930.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                "https://images.pexels.com/photos/2253834/pexels-photo-2253834.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                'https://images.pexels.com/photos/301367/pexels-photo-301367.jpeg?auto=compress&cs=tinysrgb&w=1600',
+                'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=1600',
+                'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=1600',
+                'https://images.pexels.com/photos/1438065/pexels-photo-1438065.jpeg?auto=compress&cs=tinysrgb&w=1600',
+                'https://images.pexels.com/photos/1327689/pexels-photo-1327689.jpeg?auto=compress&cs=tinysrgb&w=1600',
+                'https://images.pexels.com/photos/2721977/pexels-photo-2721977.jpeg?auto=compress&cs=tinysrgb&w=1600'
+
+            ];
             const carousel = document.querySelector(".carousel");
             const interval = setInterval(function () {
                 startCarousel();
