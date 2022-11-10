@@ -53,7 +53,12 @@
                     <% for(let p of produto){%>
                     <tbody id="produto_<%=p.id%>" class="produto">
                         <tr align="center" id="primeiraLinha">
-                            <td><img src="./img/<%= p.img%>" alt="<%= p.nome%>"></td>
+                            <td>
+                                <button class="remove" id="bt_<%= p.id %>" type="button">
+                                    <i  class='material-icons' id= <%= p.id%> > delete</i>
+                                </button>
+                                <img src="./img/<%= p.img%>" alt="<%= p.nome%>">
+                            </td>
                             <td> <%= p.nome%> </td>
                             <td> <%= p.qtd%></td>
                             <td> R$<%= p.preco%></td>
@@ -65,12 +70,7 @@
                             <td align="center"> <strong> <%= p.qtd%> </strong> </td>
                         </tr>
                         <tr>
-                            <td> 
-                                <button id="bt_<%= p.id %>" type="button">
-                                <i class='material-icons' id= <%= p.id%> >delete</i>
-                                </button>
-                             </td>
-                             
+                            <td></td>
                             <td></td>
                             <td>Valor unitário</td>
                             <td align="center"> <strong> R$<%= p.preco%> </strong> </td>
@@ -96,7 +96,7 @@
                             <td></td>
                             <td></td>
                             
-                            <td colspan="2" id="total">Total R$ <%= total %> </td>
+                            <td colspan="2" id="total">Total <%= valorFormatado%> </td>
                             
                         </tr>
                         

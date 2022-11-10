@@ -56,7 +56,8 @@ const paginasController = {
         for (const p of produtos) {
             total = total + (p.preco * p.qtd);
         }
-        return res.render('carrinho.ejs',{produto:req.session.carrinho, total});
+        var valorFormatado = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        return res.render('carrinho.ejs',{produto:req.session.carrinho, valorFormatado});
     },
     
     showFinalizacao:(req, res)=>{

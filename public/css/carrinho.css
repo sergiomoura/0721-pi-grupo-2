@@ -50,7 +50,6 @@ h1{
 }
 #quadro_tabela{  
     margin: 30px auto 90px auto;
-
 }
 table{
     font-size: 15px;
@@ -67,8 +66,7 @@ table{
     cursor: pointer;
 }
 table>tbody>tr>td>img{
-    height: 80px;
-    width: 140px;
+    height: 140px;
 }
 #espaco>td{
     padding-bottom: 20px;
@@ -100,6 +98,17 @@ thead>tr>th{
 
 #primeiraLinha>td{
     padding: 20px 0px;
+}
+.remove{
+    background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+    color: rgba(109, 68, 75, 0.974);
+    border: none;
+    align-self: center;
+}
+.remove:hover{
+    color: rgba(215, 160, 168, 0.974); 
+    transition: 0.5s;
 }
 #botao{
     padding: 13px 57px;
