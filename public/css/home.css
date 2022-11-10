@@ -77,7 +77,7 @@ header>#conteiner_cabecalho {
 #conteiner_nav {
   border-bottom: 3px double rgba(175, 146, 30, 0.458);
   margin: 0%;
-  background-color: rgba(23, 23, 23, 0.886);
+  background-color: rgba(0, 0, 0, 0.886);
 }
 
 #conteiner_nav>nav {
@@ -378,11 +378,103 @@ body::-webkit-scrollbar-track {
   background: #131313f0;
   width: 1px;
 }
-@media(max-width:480px){
-  main{
-      width: 330px;
-  }
- 
+
+/* Para celulares */
+@media(max-width:480px) {
+  body {
+    background-color: rgb(20, 160, 139);
 }
+}
+
+/* Para tabletes, ipads */
+@media(min-width:481px) and (max-width:791px) {
+  body {
+    background-color: rgb(108, 203, 7);
+}
+}
+
+
+@media(min-width:791px) and (max-width:1227px) {
+  .container {
+    gap: 10px;
+  }
+  .produto img {
+    height: 120px;
+  }
+  
+  .bloco {
+    width: 100%; 
+    height: 68px;
+    bottom: 68px;
+    opacity: 0;
+  }
+  #saber{
+  font-size: 13px;
+  }
+  
+  .produto-nome {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  
+  .produto-preco {
+    font-size: 27px;
+  }
+}
+
+/* Para laptos e desktops */
+@media(min-width:1228px) and (max-width:1280px) {
+
+.container {
+  gap: 20px;
+}
+.produto img {
+  height: 120px;
+}
+
+.bloco {
+  width: 100%; 
+  height: 68px;
+  bottom: 68px;
+  opacity: 0;
+}
+#saber{
+ 
+  font-size: 13px;
+}
+
+.produto-nome {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.produto-preco {
+  font-size: 27px;
+}
+
+}
+
+/* Para telas grandes */
+@media(min-width:1281px) {
+  .container {
+    gap: 25px;
+  }
+  .produto{
+    position: relative;
+    border: solid 1px rgba(255, 192, 203, 0.35);
+  }
+  .produto img {
+    height: 180px;
+  }
+  
+  .bloco {
+    width: 100%; 
+    height: 77px;
+    bottom: 68px;
+    opacity: 0;
+  }
+
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
