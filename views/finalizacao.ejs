@@ -14,107 +14,46 @@
 </head>
 
 <body>
-    <header>
-        <section id="conteiner_cabecalho">
-            <div>
-                <img id="logo" src="img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png"
-                    alt="Logo LanggGlow">
-            </div>
-            <ul id="conteiner_informacoes">
-                <li>
-                    <a href='#'> <img src="img/perfil_do_usario.png" alt="icone de pesquisa"></a>
-                </li>
-                <div id="conteiner_pesquisa_sacola">
-                    <p class="pesquisa_sacola">
-                        <a href='#'> <img src="img/icone_pesquisa.png" alt="icone de pesquisa"></a>
-                    </p>
-                    <p class="pesquisa_sacola">
-                        <a href='#'> <img src="img/sacola (2).png" alt="icone de sacola"></a>
-                    </p>
-                </div>
-            </ul>
-            </div>
-
-        </section>
-        <section id="conteiner_nav">
-            <nav>
-                <ul>
-                    <li><a href="/">Skincare</a></li>
-                    <li><a href="/">Rosto</a></li>
-                    <li><a href="/">Lábios</a></li>
-                    <li><a href="/">Olhos</a></li>
-                    <li><a href="/">Lançamentos</a></li>
-                    <li><a href="/">Promoções</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-    <section id="textos">
-        <h2>
-            Sua Compra Foi Efetuada Com Sucesso!
-            <br>
-            Obrigada por comprar com Langglow :)
-        </h2>
-        <h1>
-            Veja Nossos Outros Produtos Também!
-        </h1>
-    </section>
+    <%- include("parts/header.ejs") %>
     <main>
-        <article id="imagens_slide">
-            <section id="imagens">
-                <div class="content">
-                    <div class="slides">
-                        <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
-                        <input type="radio" name="slide" id="slide4">
-                        <input type="radio" name="slide" id="slide5">
-
-                        <div class="slide s1">
-                            <img src="img/maquiagem_ajeitada.jpg" alt="maquiagem Ruby Rose Soft Nude">
-
-                        </div>
-                        <div class="slide">
-                            <img src="img/maquiagem_aberta.jpg" alt="maquiagem Ruby Rose Soft Nude">
-                        </div>
-                        <div class="slide">
-                            <img src="img/maquiagem_bonita.jpg" alt="maquiagem Ruby Rose Soft Nude">
-                        </div>
-                        <div class="slide">
-                            <img src="/img/maquiagens.jpg" alt="maquiagem Ruby Rose Soft Nude">
-                        </div>
-                        <div class="slide">
-                            <img src="img/maquiagem_principal1.jpg" alt="maquiagem Ruby Rose Soft Nude">
-
-                        </div>
-                    </div>
-                    <div class="navigation">
-                        <label class="bar" for="slide1"></label>
-                        <label class="bar" for="slide2"></label>
-                        <label class="bar" for="slide3"></label>
-                        <label class="bar" for="slide4"></label>
-                        <label class="bar" for="slide5"></label>
-                    </div>
-
-                </div>
-            </section>
-        </article>
+        <section id="textos">
+            <div id="finalizacao">
+                <h2>
+                    Sua Compra Foi Efetuada Com Sucesso <%= cliente ?` ${cliente.nome}` : ''%>! 
+                    <br>
+                    Obrigada por comprar com Langglow :)
+                </h2>
+                <img id="langglow" src="/img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png" alt="Logo LanggGlow">
+                
+            </div>
+        </section>
+        <section id="pre-footer">
+            <article id="categorias">
+                <ul>
+                    Categorias:
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Rosto</a></li>
+                    <li><a href="#">Lábios</a></li>
+                    <li><a href="#">Olhos</a></li>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Promoções</a></li>
+                </ul>
+            </article>
+            <article id="contato">
+                <ul>
+                    <li>
+                        Atendimento ao Cliente
+                    </li>
+                    <li>
+                        Central SAC: (00) 0000-0000
+                    </li>
+                    <li>
+                        Email: faleconosco@langglow.com
+                    </li>
+            </article>
+        </section>
     </main>
-    <footer>
-        Devolopers<br>
-        <div id="robos">
-            <p> <a href="https://github.com/Geovannalessa"><img src="img/robo.png" alt=""></a> </p>
-            <p> <a href="https://github.com/nati3054"><img src="img/robo.png" alt=""></a></p>
-            <p> <a href="https://github.com/Gabs-ag"><img src="img/robo.png" alt=""></a> </p>
-            <p> <a href="https://github.com/AnaCarolll"><img src="img/robo.png" alt=""></a></p>
-            <p> <a href="https://github.com/LalaGomes"><img src="img/robo.png" alt=""></a></p>
-        </div>
-        <div id="instituicoes">
-            <p><a href="https://www.digitalhouse.com/br?utm_source=google&utm_medium=paidsearch&utm_campaign=lead&utm_term=institucional&utm_content=b2c-institucional-curso-landing-texto-lead-kw-institucional-defrase-keyword-all-other-text-carreer-none-none-all-br-search-none&gclid=CjwKCAjwv4SaBhBPEiwA9YzZvLtGrOFPIsJd0EINPYLAdLXe3FQvaQXmI8uYxo-5HBjkkLFWGUs_gRoCT8oQAvD_BwE"><img src="img/dh.png" alt="curso DH que nos trouxe o ginho menorqtres"></a></p>
-            <p><a href="https://programadoresdoamanha.org"><img src="img/progAmanha.png" alt="o curso que mudou nossas vidas"></a></p>
-            <p><a href="https://github.com/sergiomoura"><img src="img/ginho.png" alt="nosso querido professor"></a></p>
-        </div>
-    </footer>
+    
 </body>
 
 </html>

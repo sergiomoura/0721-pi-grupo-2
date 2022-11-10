@@ -9,16 +9,7 @@ const paginasController = {
         let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
         return res.render('home.ejs',{produtos});
     },
-    // showHomeSkincare: async (req,res) => {
-    //     let sql = `SELECT * FROM produtos`;
-    //     let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
-    //     return res.render('home.ejs',{produtos});
-    // },
-    // showHomeRosto: async (req,res) => {
-    //     let sql = `SELECT * FROM produtos`;
-    //     let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
-    //     return res.render('home.ejs',{produtos});
-    // },
+    
     showListagem:(req,res)=>{
         res.render('listagemProduto.ejs')
     },
@@ -60,8 +51,10 @@ const paginasController = {
         return res.render('carrinho.ejs',{produto:req.session.carrinho, valorFormatado});
     },
     
-    showFinalizacao:(req, res)=>{
-        res.render('finalizacao.ejs')
+    showFinalizacao: async(req, res)=>{
+        let sql = `SELECT * FROM produtos`;
+        let produtos = await sequelize.query(sql, {type:sequelize.QueryTypes.SELECT});
+        res.render('finalizacao.ejs',{produtos})
     },
     showPainel:(req, res)=>{
         res.render('painelDeUsuario.ejs')

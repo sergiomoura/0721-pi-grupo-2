@@ -11,38 +11,18 @@
 </head>
 
 <body>
-    <header>
-        <section id="conteiner_cabecalho">
-            <div>
-                <img id="logo" src="img/Logotipo de Espaço de Beleza Cosméticos Delicado (8) 1.png"
-                    alt="Logo LanggGlow">
-            </div>
-            <ul id="conteiner_informacoes">
-                <li>
-                    Atendimento ao Cliente
-                </li>
-                <li>
-                    Central SAC: (00) 0000-0000
-                </li>
-                <li>
-                    Email: faleconosco@langglow.com
-                </li>
-        </section>
-    </header>
+    <%- include("parts/header.ejs") %>
     <main>
         <div id="carrinho">
-            <h3>
-                 Produto Interno > Carrinho De Compras
-            </h3>
             <h1>
                 Carrinho de compras
             </h1>
 
-            
             <div id="quadro_tabela">
                 <table>
                     <thead>
                         <tr>
+                            <th id="cinza"></th>
                             <th id="dotted1">#</th>
                             <th>Descrição</th>
                             <th>Quantidade</th>
@@ -57,6 +37,8 @@
                                 <button class="remove" id="bt_<%= p.id %>" type="button">
                                     <i  class='material-icons' id= <%= p.id%> > delete</i>
                                 </button>
+                            </td>
+                            <td>
                                 <img src="./img/<%= p.img%>" alt="<%= p.nome%>">
                             </td>
                             <td> <%= p.nome%> </td>
@@ -66,16 +48,19 @@
                         <tr>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td>Quantidade Total De Itens</td>
                             <td align="center"> <strong> <%= p.qtd%> </strong> </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td>Valor unitário</td>
                             <td align="center"> <strong> R$<%= p.preco%> </strong> </td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td>Subtotal</td>
@@ -89,10 +74,12 @@
                         <tr id="espaco">
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td>Entrega</td>
                             <td align="center"><strong> Calcular</strong> </td>
                         </tr>
                         <tr align="center">
+                            <td></td>
                             <td></td>
                             <td></td>
                             
@@ -101,6 +88,7 @@
                         </tr>
                         
                         <tr id="espaco2">
+                            <td></td>
                             <td ></td>
                             <td align="end"><a href="/" id="comprando">Continuar Comprando</a> Ou</td>
                             <td colspan="2" align="center"> 
