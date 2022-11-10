@@ -319,6 +319,12 @@ footer {
   transition: .90s;
 
 }
+.redesSociais img{
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  
+}
 
 @keyframes borda {
   0% {

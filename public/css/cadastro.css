@@ -94,16 +94,17 @@ body {
   
   form>#entrar{
     align-items: center;
-    background-color: #ffffff1c;
+    /* background-color: #ffffff1c; */
     color: rgb(90, 85, 85);
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #e2d5d5b5;
+    background-color: white;
     font-size: medium;
     font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
+    margin: 10px;
     
   }
   form>#entrar:focus{
